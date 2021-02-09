@@ -4,6 +4,7 @@
  * Site: www.macodeid.com
  * License under CC 4.0 ()
  */
+ @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 :root {
   --primary: #3D58F3;
@@ -2856,3 +2857,8 @@ hr {
     padding: 20px 0 0 40px;
   }
 }
+
+/* custom css */
+
+
+/* end custom css */

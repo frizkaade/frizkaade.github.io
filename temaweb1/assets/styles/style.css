@@ -162,7 +162,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(/assets/img/ptn-bg1.jpg);
+    background-image: url(../img/ptn-bg1.jpg);
+    background-size: cover;
     height: 100vh;
 }
 
@@ -281,7 +282,7 @@ button:focus {
 }
 
 #music #play {
-    background: url('/assets/font/play.png') no-repeat;
+    background: url('../font/play.png') no-repeat;
     background-size: cover;
 }
 
@@ -332,7 +333,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-image: url('/assets/img/layer2.png');
+    background-image: url('../img/layer2.png');
     border-radius: 10px;
 
 }
@@ -343,7 +344,7 @@ AKHIR NAVIGASI
 
 
 /*-----------------------------------------------------
-COVER
+AWAL COVER
 -------------------------------------------------------*/
 .cover {
     padding-top: 2rem;
@@ -396,17 +397,16 @@ COVER
 /*-----------------------------------------------------
 AKHIR COVER
 -------------------------------------------------------*/
-
+/*-----------------------------------------------------
+AWAL CSS ALL
+-------------------------------------------------------*/
 .container {
     display: grid;
 }
 
-/*-----------------------------------------------------
-AWAL CSS BOX MODEL
--------------------------------------------------------*/
 .box {
     text-align: center;
-    box-shadow: 5px 5px 15px #1f1f1f;
+    box-shadow: 5px 5px 15px #b0a9a0;
     padding: 1rem;
     width: 90%;
     margin: 1rem auto;
@@ -432,7 +432,7 @@ AWAL WEDDING
 }
 
 #coupleName {
-    background: url(/assets/img/frame-6543169.png);
+    background: url(../img/frame-6543169.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 11em;
@@ -464,6 +464,17 @@ AKHIR COUPLE
 /*-----------------------------------------------------
 AWAL EVENT
 -------------------------------------------------------*/
+.card {
+    background: inherit;
+    position: relative;
+    opacity: ;
+    border: 10px solid rgba(255, 255, 255, .15);
+    box-shadow: 2px 2px 15px #b0a9a0,
+        inset 1px 1px 15px #b0a9a0;
+    /* box-shadow: 3px 3px 13px #b0a9a0; */
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+}
 
 /*-----------------------------------------------------
 AKHIR EVENT

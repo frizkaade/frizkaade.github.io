@@ -41,7 +41,7 @@ $('a[href*="#"]')
 
 // background Music
 var musik=new Audio();
-musik.src="assets/media/WeddingStoryMusic.mp3";
+musik.src="../media/WeddingStoryMusic.mp3";
 musik.loop=true;
 musik.play();
 
@@ -53,17 +53,16 @@ function mulaiAudio(){
   function fplay(){
     if(musik.paused){
       musik.play();
-      play.style.background="url(../assets/font/mute.png)";
+      play.style.background="url(../font/mute.png)";
       play.style.backgroundSize = "cover";
       play.style.backgroundRepeat = "no-repeat";
     }else{
       musik.pause();
-      play.style.background="url(../assets/font/play.png)";
+      play.style.background="url(../font/play.png)";
       play.style.backgroundSize = "cover";
       play.style.backgroundRepeat = "no-repeat";
     }
   }
 }
 window.addEventListener('load', mulaiAudio);
-
 // Akhir Background Music

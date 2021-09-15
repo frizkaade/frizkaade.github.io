@@ -1,0 +1,506 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap');
+
+/*------------------------------------------------------------------
+
+/*------------------------------------------------------------------
+AWAL CSS RESET
+-------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.8;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-----------------------------------------------------
+AKHIR CSS RESET
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL CSS FOR ALL
+-------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #844315;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(/assets/img/ptn-bg1.jpg);
+    height: 100vh;
+}
+
+
+a {
+    color: #721B29;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    margin: 0
+}
+
+h1 {
+    font-size: 26px
+}
+
+h2 {
+    font-size: 24px
+}
+
+h3 {
+    font-size: 20px
+}
+
+h4 {
+    font-size: 18px
+}
+
+h5 {
+    font-size: 16px
+}
+
+h6 {
+    font-size: 13px
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #721B29;
+    text-decoration: none !important;
+    opacity: 1
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    opacity: 1
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+#music {
+    position: fixed;
+    right: 0%;
+    top: 20%;
+    z-index: 1000;
+    display: grid;
+}
+
+#music button {
+    border: transparent;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#music #play {
+    background: url('/assets/font/play.png') no-repeat;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+}
+
+/*-----------------------------------------------------
+AKHIR CSS FOR ALL
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+NAVIGASI
+-------------------------------------------------------*/
+nav {
+    background-image: url('../img/ptn-bg1.jpg');
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1005;
+}
+
+ul {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+ul li {
+    float: left;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Great Vibes', cursive;
+}
+
+ul li a:hover {
+    background-image: url('/assets/img/layer2.png');
+    border-radius: 10px;
+
+}
+
+/*-----------------------------------------------------
+AKHIR NAVIGASI
+-------------------------------------------------------*/
+
+
+/*-----------------------------------------------------
+COVER
+-------------------------------------------------------*/
+.cover {
+    padding-top: 2rem;
+    text-align: center;
+    min-height: 720px;
+}
+
+.cover h1 {
+    font-size: 4rem;
+}
+
+.cover h2 {
+    font-size: 2rem;
+    margin: 0.5rem auto;
+}
+
+.cover img {
+    box-shadow: 5px 5px 15px #1f1f1f;
+    margin: 24px;
+    border-radius: 100%;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .5em;
+    display: inline-block;
+    border-radius: 2em;
+    text-align: center;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.message {
+    padding: 0.25rem 0.5rem;
+    background-color: #dcd4c9;
+    cursor: pointer;
+    box-shadow: 0 7px #b0a9a0;
+}
+
+.message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+/*-----------------------------------------------------
+AKHIR COVER
+-------------------------------------------------------*/
+
+.container {
+    display: grid;
+}
+
+/*-----------------------------------------------------
+AWAL CSS BOX MODEL
+-------------------------------------------------------*/
+.box {
+    text-align: center;
+    box-shadow: 5px 5px 15px #1f1f1f;
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    outline: none;
+    border-radius: 1rem;
+}
+
+/*-----------------------------------------------------
+AKHIR CSS ALL
+-------------------------------------------------------*/
+
+
+/*-----------------------------------------------------
+AWAL WEDDING
+-------------------------------------------------------*/
+.wedding h2 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.tgl {
+    text-decoration: overline;
+}
+
+#coupleName {
+    background: url(/assets/img/frame-6543169.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11em;
+    padding: 3.5em;
+    text-shadow: 0 0 5px #ddc08c;
+}
+
+
+
+/*-----------------------------------------------------
+AKHIR WEDDING
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL COUPLE
+-------------------------------------------------------*/
+.couple img {
+    margin-top: 2rem;
+}
+
+.couple .mempelai {
+    box-shadow: 5px 5px 15px #1f1f1f;
+    border-radius: 100%;
+}
+
+/*-----------------------------------------------------
+AKHIR COUPLE
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL EVENT
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AKHIR EVENT
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL GALERY
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AKHIR GALERY
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL GALERY
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AKHIR STORY
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL FOOTER
+-------------------------------------------------------*/
+footer img {
+    width: 80px;
+}
+
+footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    height: 150px;
+}
+
+/*-----------------------------------------------------
+AKHIR FOOTER
+-------------------------------------------------------*/

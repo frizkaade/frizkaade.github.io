@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>E-Kondangan | Tema 01</title>
+    <meta name="keywords" content="Undangan Digital">
+    <meta name="description" content="Undangan Digital">
+    <meta name="author" content="Undangan Digital">
+    <!-- Site Icon -->
+    <link rel="icon" type="assets/img" sizes="16x16" href="assets/font/favicon-16x16.png">
+
+    <!-- animation on scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    	<!-- Mine CSS -->
+	<link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Story timeline -->
+    <link rel="stylesheet" href="assets/styles/timeline.css">
+</head>
+<body>
+
+<!-- Background Musik -->
+<div id="music">
+    <button id="play"></button>
+</div>
+<!-- Akhir Background Musik -->
+
+
+<!-- Navigasi -->
+<nav>
+    <ul>
+        <li><a href="#wedding"><img src="assets/font/010-invitation.png" width="25px;" ><br>Wedding</a></li>
+        <li><a href="#couple" class="page-scroll"><img src="assets/font/004-hearts.png" width="25px;"><br>Couple</a></li>
+        <li><a href="#event" class="page-scroll"><img src="assets/font/006-calendar.png" width="25px;"><br>Events</a></li>
+        <li><a href="#galery" class="page-scroll"><img src="assets/font/016-camera.png" width="25px;"><br>Galery</a></li>
+        <li><a href="#story" class="page-scroll"><img src="assets/font/008-wedding rings.png" width="25px;"><br>Story</a></li>
+    </ul>
+</nav>
+<!-- Akhir Navigasi -->
+
+<div class="container">
+    <!-- Halaman Cover -->
+    <div class="cover">
+        <h1 data-aos="zoom-in">Undangan</h1>
+        <h6 data-aos="zoom-in">Special Invitation</h6>
+        <img src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
+        <h6>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h6>
+        <h2 data-aos="fade-right">
+            <script type='text/JavaScript'>
+                //ambil URL
+                var url = window.location.toString();
+                //ambil bagian parameternya
+                url.match(/\?(.+)$/);
+                var params = RegExp.$1;
+                // pisahkan parameter URL ke associative array
+                var params = params.split("+");
+                var queryStringList = {};
+                for(var i=0;i<params.length;i++)
+                {   var tmp = params[i].split("=");
+                    queryStringList[tmp[0]] = unescape(tmp[1]);
+                }
+                // tampilkan isi associative array
+                for(var i in queryStringList)
+                {   var res = queryStringList[i].replace(/[+]/g, " ");
+                    document.write(i+" ");
+                }
+            </script>
+        </h2>
+        <h3>
+            <a href="#wedding">
+                <p class="button message">Buka Undangan</p>
+            </a>
+        </h3>
+    </div>
+    <!-- Akhir Halaman Cover -->
+
+
+    <!-- AWAL WEDDING -->  
+    <div class="wedding box" id="wedding" data-aos="zoom-in">
+        <h1 data-aos="zoom-in">The Wedding</h1>
+        <h6 data-aos="fade-down">You are Invited to the Wedding of</h6>
+        <div id="coupleName" data-aos="flip-up">
+            <h2>Milea</h2>
+            <h2> & </h2>
+            <h2>Dilan</h2>
+        </div>
+        <div class="saveDate" data-aos="fade-down">
+            <h6>Save The Date </h6>
+            <h5 class="tgl">- Senin, 05 Januari 2021 -</h5>
+            <h5>Great Mosque Daarussalaam Purbalingga</h5>
+        </div>
+        <h3>
+            <a href="#maps">
+                <p class="button message">Lihat Denah Lokasi</p>
+            </a>
+        </h3>
+    </div>
+    <!-- AKHIR WEDDING -->
+
+    <!-- AWAL COUPLE -->
+    <div class="box couple" id="couple" data-aos="zoom-in">
+        <img src="assets/img/salam.png" alt="Basmallah" width="200px"><br>
+        <h6>Assalamu'alaikum Warahmatullahi Wabarakatuh</h6>
+        <h6>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankan putra-putri kami :</h6>
+        <img src="assets/img/girl.png" data-aos="zoom-in" alt="Mempelai Pia" width="100px" class="mempelai">
+        <h2 data-aos="fade-down">
+            <i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i>
+				<span>Milea Ananta</span>
+            <i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i>
+        </h2>
+        <h6 data-aos="flip-up">
+            Putri ke-4 dari Bapak Drs Widiyanto & Ibu Siti S.pd<br>
+            ( Kalapacung, Bobotsari, Purbalingga, Jawa Tengah )
+        </h6>
+        <img src="assets/img/man.png" data-aos="zoom-in" alt="Mempelai Wanita" width="100px" class="mempelai">
+        <h2 data-aos="fade-down">
+            <i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i>
+            <span>Dilan Damara</span>
+            <i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i>
+        </h2>
+        <h6 data-aos="flip-up">
+            Putra ke-2 Dari Bapak Drs Widiyanto & Ibu Siti S.pd<br>
+            ( Kalapacung, Bobotsari, Purbalingga, Jawa Tengah )
+        </h6>
+    </div>
+    <!-- AKHIR COUPLE -->
+
+    <!-- AWAL EVENT -->
+    <div class="box event" id="event" data-aos="zoom-in">
+        <h1>Save The Date</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3><i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i> Akad Nikah</h3>
+                </div>
+                <div class="col">
+                    <h2>29</h2>
+                </div>
+                <div class="col">
+                    
+                    <h3><i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i> Resepsi</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>b2 k1</p>
+                </div>
+                <div class="col">
+                    <p>b2 k2</p>
+                </div>
+                <div class="col">
+                    <p>b2 k3</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 id="maps">Denah Lokasi</h3>
+            <!-- Elemen yang akan menjadi kontainer peta -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6861919054427!2d109.35990371450465!3d-7.389018174790342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512854c8efcb3%3A0x86cac1d0cb3ba8ee!2sGreat%20Mosque%20Daarussalaam%20Purbalingga!5e0!3m2!1sen!2sid!4v1631665001832!5m2!1sen!2sid" width="100%" height="auto" style="border:0;" loading="lazy"></iframe><br>
+            <p type="button" class="button message" data-toggle="modal" data-target="#myModal">Buka Maps</p>
+        </div>
+    </div>
+    <!-- AKHIR EVENT -->
+
+    <!-- AWAL GALERY -->
+    <div class="box galery" id="galery" data-aos="zoom-in">
+        <h1>Galery</h1>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam modi iste ipsa doloremque dolor, nobis, illum ex iusto laboriosam non dolore tempora fuga repudiandae minus. Deleniti minima voluptates ipsam!100</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <!-- AKHIR GALERY -->
+
+    <!-- AWAL STORY -->
+    <div class="box story" id="story" data-aos="zoom-in">
+        <h1>Story</h1>
+        <div class="timeline">
+            <div class="container-story left">
+                <div class="content" data-aos="zoom-in">
+                    <h3>First Meet</h3>
+                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
+                </div>
+            </div>
+            <div class="container-story right">
+                <div class="content" data-aos="zoom-in">
+                    <h3>First Date</h3>
+                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
+                </div>
+            </div>
+            <div class="container-story left">
+                <div class="content" data-aos="zoom-in">
+                    <h3>Proposal</h3>
+                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
+                </div>
+            </div>
+            <div class="container-story right">
+                <div class="content" data-aos="zoom-in">
+                    <h3>Engagement</h3>
+                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
+                </div>
+            </div>
+            <div class="container-story left">
+                <div class="content" data-aos="zoom-in">
+                    <h3>The Wedding</h3>
+                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR STORY -->
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <!-- konten modal-->
+      <div class="modal-content text-center">
+        <!-- heading modal -->
+        <div class="modal-header">
+          <h3 class="modal-title">Dimohon untuk patuhi Protokol Kesehatan</h3>
+        </div>
+        <!-- Endheading modal -->
+        <!-- body modal -->
+        <div class="modal-body" role="alert">
+          <img src="assets/img/5m.png" alt="Protokol Kesehatan" width="100%" height="auto">
+        </div>
+        <!-- Endbody modal -->
+        <!-- footer modal -->
+        <div class="modal-footer">
+           <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal" style="background-color: black;" data-toggle="modal" data-target="#myModal"><a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971" style="color: white;">OK</a></button>
+        </div>
+        <!-- Endfooter modal -->
+      </div>
+      <!-- End konten modal-->
+    </div>
+</div>
+<!-- End Modal -->
+
+<!-- AWAL FOOTER -->
+<div class="footer">
+<footer>
+    <p>Design with Love by <img src="assets/font/ek-bg.png"></p>
+</footer>
+</div>
+<!-- AKHIR FOOTER -->
+<script src="assets/script/jquery-3.5.1.js"></script>
+<script src="assets/script/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script src="assets/script/bootstrap.min.js"></script>
+<script>
+    AOS.init({
+        duration: 2000,
+    })
+</script>
+<script>
+    function myFunction() {
+      alert("Dimohon Untuk Memakai Masker dan Patuhi Protokol Kesehatan");
+    }
+
+    var elem = document.documentElement;
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+
+    function closeFullscreen() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen();
+      }
+    }
+</script>
+</body>
+</html>

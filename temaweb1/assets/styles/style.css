@@ -467,11 +467,10 @@ AWAL EVENT
 .card {
     background: inherit;
     position: relative;
-    opacity: ;
+    opacity: .8;
     border: 10px solid rgba(255, 255, 255, .15);
     box-shadow: 2px 2px 15px #b0a9a0,
         inset 1px 1px 15px #b0a9a0;
-    /* box-shadow: 3px 3px 13px #b0a9a0; */
     margin: 1.5rem auto;
     border-radius: 1rem;
 }

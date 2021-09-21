@@ -132,8 +132,8 @@ button:focus {
 
 #music button {
     border: transparent;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     cursor: pointer;
 }
 
@@ -161,7 +161,6 @@ AKHIR CSS FOR ALL
 NAVIGASI
 -------------------------------------------------------*/
 nav {
-    background-image: url('../img/ptn-bg1.jpg');
     position: fixed;
     left: 0;
     right: 0;
@@ -178,7 +177,10 @@ ul {
 ul li {
     float: left;
     width: 20%;
-    padding: 0.5rem;
+    padding: 0.2rem;
+    border-top: 1px solid #844315;
+    border-radius: 1rem;
+    background-image: url('../img/ptn-bg1.jpg');
 }
 
 ul li a {
@@ -189,8 +191,9 @@ ul li a {
 }
 
 ul li a:hover {
-    background-image: url('../img/layer2.png');
-    border-radius: 10px;
+    background-color: #dcd4c9;
+    border-radius: 1rem;
+    color: #844315;
 
 }
 
@@ -293,10 +296,6 @@ AWAL WEDDING
     letter-spacing: 0.5rem;
 }
 
-.tgl {
-    text-decoration: overline;
-}
-
 #coupleName {
     background: url(../img/frame-6543169.png);
     background-position: center;
@@ -315,13 +314,12 @@ AKHIR WEDDING
 /*-----------------------------------------------------
 AWAL COUPLE
 -------------------------------------------------------*/
-.couple img {
-    margin-top: 2rem;
-}
 
 .couple .mempelai {
-    box-shadow: 5px 5px 15px #ddc08c;
+    box-shadow: 5px 5px 15px #b0a9a0;
     border-radius: 100%;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
 }
 
 /*-----------------------------------------------------

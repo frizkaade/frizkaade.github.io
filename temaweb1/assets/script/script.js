@@ -55,7 +55,7 @@ var distance = countDownDate - now;
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = days + " Hari, " + hours + " Jam "
+  document.getElementById("countdown").innerHTML = days + " Hari " + hours + " Jam "
   + minutes + " Menit " + seconds + " Detik ";
     
   // If the count down is over, write some text 

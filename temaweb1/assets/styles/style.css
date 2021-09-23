@@ -6,6 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap');
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
 /*-----------------------------------------------------
 AWAL CSS FOR ALL
 -------------------------------------------------------*/
@@ -168,33 +181,33 @@ nav {
     z-index: 1005;
 }
 
-ul {
+nav ul {
     overflow: hidden;
     width: 100%;
 
 }
 
-ul li {
+nav ul li {
     float: left;
     width: 20%;
-    padding: 0.2rem;
-    border-top: 1px solid #844315;
-    border-radius: 1rem;
+    padding: 0.1rem;
+    border-top: .5px solid #844315;
+    border-radius: .8rem;
     background-image: url('../img/ptn-bg1.jpg');
 }
 
-ul li a {
+nav ul li a {
     display: block;
     text-align: center;
     font-size: 1em;
+    opacity: 0.8;
     font-family: 'Great Vibes', cursive;
 }
 
-ul li a:hover {
-    background-color: #dcd4c9;
-    border-radius: 1rem;
+nav ul li a:hover {
     color: #844315;
-
+    opacity: 1;
+    font-weight: bold;
 }
 
 /*-----------------------------------------------------
@@ -206,7 +219,7 @@ AKHIR NAVIGASI
 AWAL COVER
 -------------------------------------------------------*/
 .cover {
-    padding-top: 1rem;
+    padding-top: .8rem;
     text-align: center;
     min-height: 720px;
 }
@@ -222,7 +235,7 @@ AWAL COVER
 
 .cover img {
     box-shadow: 5px 5px 15px #b0a9a0;
-    margin: 10px;
+    margin: 15px auto;
     border-radius: 100%;
 }
 
@@ -328,7 +341,7 @@ AKHIR COUPLE
 /*-----------------------------------------------------
 AWAL EVENT
 -------------------------------------------------------*/
-.card {
+.mycard {
     background: inherit;
     background-image: url(../img/checkerboard-cross.png);
     background-size: cover;

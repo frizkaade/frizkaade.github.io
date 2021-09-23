@@ -21,22 +21,23 @@
 	<link rel="stylesheet" href="assets/styles/style.css">
     <!-- Story timeline -->
     <link rel="stylesheet" href="assets/styles/timeline.css">
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-<!-- Background Musik -->
+<!-- Background      -->
 <div id="music">
     <button id="play"></button>
 </div>
 <!-- Akhir Background Musik -->
-
 
 <!-- Navigasi -->
 <nav>
     <ul>
         <li><a href="#wedding"><img src="assets/font/010-invitation.png" width="25px;" ><br>Wedding</a></li>
         <li><a href="#couple"><img src="assets/font/004-hearts.png" width="25px;"><br>Couple</a></li>
-        <li><a href="#event" class="acara"><img src="assets/font/006-calendar.png" width="25px;"><br>Events</a></li>
+        <li><a href="#event"><img src="assets/font/006-calendar.png" width="25px;"><br>Events</a></li>
         <li><a href="#galery"><img src="assets/font/016-camera.png" width="25px;"><br>Galery</a></li>
         <li><a href="#story"><img src="assets/font/008-wedding rings.png" width="25px;"><br>Story</a></li>
     </ul>
@@ -47,10 +48,10 @@
     <!-- Halaman Cover -->
     <div class="cover">
         <h1 data-aos="zoom-in">Undangan</h1>
-        <h6 data-aos="zoom-in">Special Invitation</h6>
+        <h5 data-aos="zoom-in">Special Invitation</h5>
         <img src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
         <h6>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h6>
-        <h2 data-aos="fade-right">
+        <h3 data-aos="zoom-in">
             <script type='text/JavaScript'>
                 //ambil URL
                 var url = window.location.toString();
@@ -70,7 +71,7 @@
                     document.write(i+" ");
                 }
             </script>
-        </h2>
+        </h3>
             <h3><a href="#wedding"><p class="button message" onclick="openFullscreen();">Buka Undangan</p></a>
             <hr>
             <h4>Waktu Menuju Acara</h4>
@@ -145,12 +146,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="card" data-aos="zoom-in">
+                    <div class="mycard" data-aos="zoom-in">
                         <div class="card-body">
                             <img src="/temaweb1/assets/font/hand.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
                             <h3 class="card-title">Akad Nikah</h3>
                             <h6 class="card-text" style="font-weight: bold;">Selasa, 22 Februari 2022</h6>
-                            <h6 class="card-text" style="font-weight: bold;">Pukul 09:00 WIB</h6>
+                            <h6 class="card-text" style="font-weight: bold;">Pukul 07:00 WIB</h6>
                             <h6 class="card-text">Bertempat di Masjid Agung Daarussalaam Purbalingga</h6>
                             <h6 class="card-text">Jl. Jambu Karang No.1, Purbalingga, Kec. Purbalingga, Kabupaten Purbalingga, Jawa Tengah 53311</h6> 
                             <h4><a href="#maps" class="button message">LOKASI</a></h4>
@@ -158,7 +159,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card" data-aos="zoom-in">
+                    <div class="mycard" data-aos="zoom-in">
                         <div class="card-body">
                             <img src="/temaweb1/assets/font/007-wedding cake.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
                             <h3 class="card-title"> 
@@ -186,14 +187,29 @@
                 </div>
             </div>
         </div>
+        <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+            <div class="card-header">
+                <h4>Protokol Kesehatan</h4>
+            </div>
+            <blockquote class="blockquote mb-0">
+                <h6>Sehubungan dengan situasi pandemi COVID-19 saat ini, tanpa mengurangi rasa hormat kami kepada Bapak/Ibu/Saudara/i, acara pernikahan kami akan dilaksanakan dengan menerapkan standar protokol kesehatan.</h6>
+                <img src="/temaweb1/assets/font/outline_wash_black_48dp.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
+                <span class="material-icons outlined">masks</span><h6>Memakai masker</h6>
+                
+                <span class="material-icons-outlined">wash</span><h6>Mencuci tangan</h6>
+                
+                <span class="material-icons">social_distance</span><h6>Menjaga jarak</h6>
+            </blockquote>
+        </div>
     </div>
     <!-- AKHIR EVENT -->
 
     <!-- AWAL GALERY -->
     <div class="box galery" id="galery" data-aos="zoom-in">
         <h1>Galery</h1>
+        <h6>~ Moment terindah Milea & Dilan ~</h6>
         <div class="container">
-            <div class="row">
+            <class class="row">
                 <div class="col-sm shadow-lg p-3 mb-5 bg-transparent rounded">
                     <img src="./assets/img/galery/1.jpg" class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;">
                 </div>

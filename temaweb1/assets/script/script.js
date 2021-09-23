@@ -35,7 +35,7 @@ $('a[href*="#"]')
     }
   });
 
-// Awal CountDown Timer
+// AWAL COUNTDOWN TIMER
   // Set the date we're counting down to
   var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
@@ -64,9 +64,9 @@ if (distance < 0) {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
-// Akhir Countdown Timer
+// AKHIR COUNTDOWN TIMER
 
-// background Music
+// AWAL BACKGROUND MUSIK
 var musik=new Audio();
 musik.src="assets/media/WeddingStoryMusic.mp3";
 musik.loop=true;
@@ -92,4 +92,4 @@ function mulaiAudio(){
   }
 }
 window.addEventListener('load', mulaiAudio);
-// Akhir Background Music
+// AKHIR BACKGROUND MUSIK

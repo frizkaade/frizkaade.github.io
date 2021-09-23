@@ -5,9 +5,11 @@
  * License under CC 4.0 ()
  */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500&display=swap');
 
 :root {
-  --primary: #3D58F3;
+  --primary: #e83e8c;
   --secondary: #A52EFF;
   --success: #0ABF9E;
   --warning: #E89E09;
@@ -18,24 +20,23 @@
   --light: #F0EEF5;
   --gray: #6b6872;
   --white: #fff;
-  --font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  --font-family: 'Montserrat', sans-serif;
   --line-height: 1.7;
-
 }
 
 body {
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: #383340;
+  color: #e83e8c;
 }
 
 a {
-  color: #526bf5;
+  color: #e83e8c;
 }
 
 a:hover {
-  color: #7b50e6;
+  color: #C6D57E;
 }
 
 h1,
@@ -56,16 +57,19 @@ h6,
 h1,
 .h1 {
   font-size: 3rem;
+  font-family: 'Great Vibes', cursive;
 }
 
 h2,
 .h2 {
   font-size: 2.5rem;
+  font-family: 'Great Vibes', cursive;
 }
 
 h3,
 .h3 {
   font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
 }
 
 h4,
@@ -1397,7 +1401,7 @@ hr {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #3D58F3;
+  background-color: #e83e8c;
   border-color: transparent !important;
 }
 
@@ -1423,7 +1427,7 @@ hr {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #ffffff;
-  background-color: #3D58F3;
+  background-color: #e83e8c;
   box-shadow: none;
 }
 
@@ -2006,27 +2010,27 @@ hr {
 
 .btn-gradient {
   color: #fff;
-  background: linear-gradient(45deg, var(--primary), #9548F9);
+  background: linear-gradient(45deg, var(--primary), #A2CDCD);
   border: none;
 }
 
 .btn-gradient:hover {
   color: #fff;
-  background: linear-gradient(45deg, var(--primary), #9548F9);
+  background: linear-gradient(45deg, var(--primary), #A2CDCD);
   box-shadow: 0 4px 12px rgba(56, 51, 64, 0.3);
 }
 
 .btn-gradient:focus,
 .btn-gradient.focus {
   color: #fff;
-  background: linear-gradient(45deg, var(--primary), #9548F9);
+  background: linear-gradient(45deg, var(--primary), #A2CDCD);
   box-shadow: none;
 }
 
 .btn-gradient.disabled,
 .btn-gradient:disabled {
   color: #fff;
-  background: linear-gradient(45deg, var(--primary), #9548F9);
+  background: linear-gradient(45deg, var(--primary), #A2CDCD);
 }
 
 
@@ -2314,7 +2318,7 @@ hr {
   height: 20px;
   line-height: 20px;
   border-radius: 50%;
-  background-color: #9548F9;
+  background-color: #A2CDCD;
   color: #fff;
   font-size: 12px;
 }
@@ -2479,7 +2483,7 @@ hr {
 }
 
 .btn-switch .btn.active {
-  background-color: #3D58F3;
+  background-color: #e83e8c;
   color: #fff;
 }
 
@@ -2598,7 +2602,7 @@ hr {
   width: 68px;
   height: 65px;
   text-align: center;
-  background: linear-gradient(to bottom right, #3D58F3, #9548F9);
+  background: linear-gradient(to bottom right, #e83e8c, #A2CDCD);
   color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(95, 90, 104, 0.342);
@@ -2652,7 +2656,7 @@ hr {
   line-height: 22px;
   text-align: center;
   font-size: 14px;
-  background: linear-gradient(to bottom right, #3D58F3, #9548F9);
+  background: linear-gradient(to bottom right, #e83e8c, #A2CDCD);
   color: #fff;
   border-radius: 50%;
 }

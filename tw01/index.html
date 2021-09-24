@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>JetUndangan | Tema 01</title>
+	<title>JetUndangan | TW01</title>
     <meta name="keywords" content="Undangan Digital">
     <meta name="description" content="Undangan Digital">
     <meta name="author" content="Undangan Digital">
@@ -17,12 +17,14 @@
     <!-- Bootsrap -->
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    	<!-- Mine CSS -->
+    <!-- Mine CSS -->
 	<link rel="stylesheet" href="assets/styles/style.css">
     <!-- Story timeline -->
     <link rel="stylesheet" href="assets/styles/timeline.css">
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- LightBox Galery -->
+    <link rel="stylesheet" href="assets/styles/lightbox.css">
 </head>
 <body>
 
@@ -148,7 +150,7 @@
                 <div class="col-sm-6">
                     <div class="mycard" data-aos="zoom-in">
                         <div class="card-body">
-                            <img src="/temaweb1/assets/font/hand.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
+                            <img src="../tw01/assets/font/hand.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
                             <h3 class="card-title">Akad Nikah</h3>
                             <h6 class="card-text" style="font-weight: bold;">Selasa, 22 Februari 2022</h6>
                             <h6 class="card-text" style="font-weight: bold;">Pukul 07:00 WIB</h6>
@@ -161,7 +163,7 @@
                 <div class="col-sm-6">
                     <div class="mycard" data-aos="zoom-in">
                         <div class="card-body">
-                            <img src="/temaweb1/assets/font/007-wedding cake.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
+                            <img src="../tw01/assets/font/007-wedding cake.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
                             <h3 class="card-title"> 
                                 Resepsi
                             </h3>
@@ -182,7 +184,9 @@
                     <h3 id="maps">Denah Lokasi</h3>
                     <!-- Elemen yang akan menjadi kontainer peta -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6861919054427!2d109.35990371450465!3d-7.389018174790342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512854c8efcb3%3A0x86cac1d0cb3ba8ee!2sGreat%20Mosque%20Daarussalaam%20Purbalingga!5e0!3m2!1sen!2sid!4v1631665001832!5m2!1sen!2sid" width="100%" height="400px" style="border-radius: .5rem;" loading="lazy"></iframe><br>
-                    <h4 type="button" class="button message" data-toggle="modal" data-target="#myModal">BUKA MAPS</h4>
+                    <button type="button" class="button message">
+                        <a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971" target="_blank">Buka Maps</a>
+                    </button>
                     <hr>
                 </div>
             </div>
@@ -193,10 +197,9 @@
             </div>
             <blockquote class="blockquote mb-0">
                 <h6>Sehubungan dengan situasi pandemi COVID-19 saat ini, tanpa mengurangi rasa hormat kami kepada Bapak/Ibu/Saudara/i, acara pernikahan kami akan dilaksanakan dengan menerapkan standar protokol kesehatan.</h6>
-                <img src="/temaweb1/assets/font/outline_wash_black_48dp.png" alt="Akad Nikah" width="30px" height="30px" class="mb-3">
-                <span class="material-icons outlined">masks</span><h6>Memakai masker</h6>
+                <span class="material-icons">masks</span><h6>Memakai masker</h6>
                 
-                <span class="material-icons-outlined">wash</span><h6>Mencuci tangan</h6>
+                <span class="material-icons">wash</span><h6>Mencuci tangan</h6>
                 
                 <span class="material-icons">social_distance</span><h6>Menjaga jarak</h6>
             </blockquote>
@@ -209,21 +212,36 @@
         <h1>Galery</h1>
         <h6>~ Moment terindah Milea & Dilan ~</h6>
         <div class="container">
-            <class class="row">
-                <div class="col-sm shadow-lg p-3 mb-5 bg-transparent rounded">
-                    <img src="./assets/img/galery/1.jpg" class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;">
+            <class class="row justify-content-center">
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/1.jpg" 
+                    data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/1.jpg" alt=""/>
+                    </a>
                 </div>
-                <div class="col-sm shadow-lg p-3 mb-5 bg-transparent rounded">
-                    <img src="./assets/img/galery/2.jpg" class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;">
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/2.jpg" 
+                    data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/2.jpg" alt=""/>
+                    </a>
                 </div>
-                <div class="col-sm shadow-lg p-3 mb-5 bg-transparent rounded">
-                    <img src="./assets/img/galery/3.jpg" class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;">
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/3.jpg" 
+                    data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/3.jpg" alt=""/>
+                    </a>
                 </div>
-                <div class="col-sm shadow-lg p-3 mb-5 bg-transparent rounded">
-                    <img src="./assets/img/galery/4.jpg" class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;">
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/4.jpg" 
+                    data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/4.jpg" alt=""/>
+                    </a>
                 </div>
-                <div class="col-sm shadow-lg p-3 mb-5 bg-transparent rounded">
-                    <img src="./assets/img/galery/5.jpg" class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;">
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/5.jpg" 
+                    data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/5.jpg" alt=""/>
+                    </a>
                 </div>
             </div>
         </div>
@@ -276,29 +294,6 @@
 </div>
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-    <!-- konten modal-->
-      <div class="modal-content text-center">
-        <!-- heading modal -->
-        <div class="modal-header">
-          <h3 class="modal-title">Dimohon untuk patuhi Protokol Kesehatan</h3>
-        </div>
-        <!-- Endheading modal -->
-        <!-- body modal -->
-        <div class="modal-body" role="alert">
-          <img src="assets/img/5m.png" alt="Protokol Kesehatan" width="100%" height="auto">
-        </div>
-        <!-- Endbody modal -->
-        <!-- footer modal -->
-        <div class="modal-footer">
-           <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal" style="background-color: black;" data-toggle="modal" data-target="#myModal"><a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971" style="color: white;">OK</a></button>
-        </div>
-        <!-- Endfooter modal -->
-      </div>
-      <!-- End konten modal-->
-    </div>
-</div>
 <!-- End Modal -->
 
 <!-- AWAL FOOTER -->
@@ -312,6 +307,7 @@
 <script src="assets/script/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 <script src="assets/script/bootstrap.min.js"></script>
+<script src="assets/script/lightbox.js"></script>
 <script>
     AOS.init({
         duration: 2000,

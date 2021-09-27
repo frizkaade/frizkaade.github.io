@@ -9,8 +9,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500&display=swap');
 
 :root {
-  --primary: #e83e8c;
-  --secondary: #A52EFF;
+  --primary: #7F7C82;
+  --secondary: #BFA2DB;
   --success: #0ABF9E;
   --warning: #E89E09;
   --info: #4699F8;
@@ -28,11 +28,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: #e83e8c;
+  color: #7F7C82;
+  background-color: #F3F1F5;
 }
 
 a {
-  color: #e83e8c;
+  color: #7F7C82;
 }
 
 a:hover {
@@ -155,7 +156,7 @@ hr {
 }
 
 .bg-secondary {
-  background-color: #A52EFF !important;
+  background-color: var(--secondary) !important;
 }
 
 .bg-success {
@@ -187,7 +188,7 @@ hr {
 }
 
 .bg-light {
-  background-color: #F0EEF5 !important;
+  background-color: #F3F1F5 !important;
 }
 
 .bg-white {
@@ -1401,13 +1402,13 @@ hr {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #e83e8c;
+  background-color: #7F7C82;
   border-color: transparent !important;
 }
 
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #1737f1;
+  background-color: #e83e8c;
   box-shadow: 0 4px 12px rgba(61, 88, 243, 0.3);
 }
 
@@ -1427,7 +1428,7 @@ hr {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #ffffff;
-  background-color: #e83e8c;
+  background-color: #7F7C82;
   box-shadow: none;
 }
 
@@ -2144,7 +2145,7 @@ hr {
 }
 
 .navbar-expand-lg.navbar-floating.navbar-light {
-  background-color: #fff;
+  background-color: #F3F1F5;
   box-shadow: 0 1px 6px rgba(56, 51, 64, 0.1);
 }
 
@@ -2179,14 +2180,6 @@ hr {
   }
 }
 
-
-
-
-
-
-
-
-
 .page-hero-section {
   position: relative;
   height: 100vh;
@@ -2199,8 +2192,6 @@ hr {
 .page-hero-section .hero-caption {
   height: 100%;
 }
-
-
 
 .page-section {
   position: relative;
@@ -2483,7 +2474,7 @@ hr {
 }
 
 .btn-switch .btn.active {
-  background-color: #e83e8c;
+  background-color: #7F7C82;
   color: #fff;
 }
 
@@ -2602,7 +2593,7 @@ hr {
   width: 68px;
   height: 65px;
   text-align: center;
-  background: linear-gradient(to bottom right, #e83e8c, #A2CDCD);
+  background: linear-gradient(to bottom right, #7F7C82, #A2CDCD);
   color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(95, 90, 104, 0.342);
@@ -2656,7 +2647,7 @@ hr {
   line-height: 22px;
   text-align: center;
   font-size: 14px;
-  background: linear-gradient(to bottom right, #e83e8c, #A2CDCD);
+  background: linear-gradient(to bottom right, #7F7C82, #A2CDCD);
   color: #fff;
   border-radius: 50%;
 }

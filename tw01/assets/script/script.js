@@ -80,12 +80,12 @@ function mulaiAudio(){
   function fplay(){
     if(musik.paused){
       musik.play();
-      play.style.background="url(assets/font/mute.png)";
+      play.style.background="url(assets/font/mute.svg)";
       play.style.backgroundSize = "cover";
       play.style.backgroundRepeat = "no-repeat";
     }else{
       musik.pause();
-      play.style.background="url(assets/font/play.png)";
+      play.style.background="url(assets/font/play.svg)";
       play.style.backgroundSize = "cover";
       play.style.backgroundRepeat = "no-repeat";
     }
@@ -93,3 +93,35 @@ function mulaiAudio(){
 }
 window.addEventListener('load', mulaiAudio);
 // AKHIR BACKGROUND MUSIK
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+$(document).ready(function() {
+  
+  $("#tombol").click(function() {
+    $("#copy").text("Berhasil di salin");
+  })
+
+});
+
+function inputdata(){
+  var n=document.forms['ucapan']['nama'].value;
+  var e=document.forms['ucapan']['doa'].value;
+  var p=document.forms['ucapan']['konfirm'].value;        
+                                          
+  var tabel = document.getElementById("databel");
+  var baris = tabel.insertRow(1);
+  var kol1 = baris.insertCell(0);
+  var kol2 = baris.insertCell(1);
+  var kol3 = baris.insertCell(2);
+          
+  kol1.innerHTML = n;
+  kol2.innerHTML = e;
+  kol3.innerHTML = p;
+ }

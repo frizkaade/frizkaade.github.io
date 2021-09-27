@@ -137,7 +137,7 @@ button:focus {
 
 #music {
     position: fixed;
-    right: 0%;
+    right: 3%;
     top: 20%;
     z-index: 1000;
     display: grid;
@@ -145,13 +145,13 @@ button:focus {
 
 #music button {
     border: transparent;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 
 #music #play {
-    background: url('../font/play.png') no-repeat;
+    background: url('../font/play.svg') no-repeat;
     background-size: cover;
 }
 
@@ -241,15 +241,13 @@ AWAL COVER
 
 .button {
     font-family: 'Montserrat', sans-serif;
-    font-size: .5em;
+    font-size: .6em;
     display: inline-block;
     border-radius: 2em;
     text-align: center;
     padding-left: 0.25em;
     padding-right: 0.25em;
 }
-
-
 
 .btn:hover {
     opacity: 1;

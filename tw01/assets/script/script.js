@@ -110,18 +110,17 @@ $(document).ready(function() {
 
 });
 
-function inputdata(){
-  var n=document.forms['ucapan']['nama'].value;
-  var e=document.forms['ucapan']['doa'].value;
-  var p=document.forms['ucapan']['konfirm'].value;        
-                                          
-  var tabel = document.getElementById("databel");
-  var baris = tabel.insertRow(1);
-  var kol1 = baris.insertCell(0);
-  var kol2 = baris.insertCell(1);
-  var kol3 = baris.insertCell(2);
-          
-  kol1.innerHTML = n;
-  kol2.innerHTML = e;
-  kol3.innerHTML = p;
- }
+$("#btn-wa").click(function(){
+    var nomor = document.getElementById('nomer').value;
+    var pesan = document.getElementById('pesan').value;
+    var win = window.open('https://wa.me/send?phone='+nomor+'&text='+pesan);
+    if (win) {
+        //Browser has allowed it to be opened
+        win.focus();
+    } else {
+        //Browser has blocked it
+        alert('Please allow popups for this website');
+    }
+return false;
+});
+

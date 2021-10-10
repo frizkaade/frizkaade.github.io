@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <!-- Mine CSS -->
 	<link rel="stylesheet" href="assets/styles/style.css">
-    <!-- Story timeline -->
-    <link rel="stylesheet" href="assets/styles/timeline.css">
     <!-- LightBox Galery -->
     <link rel="stylesheet" href="assets/styles/lightbox.css">
 </head>
@@ -95,9 +93,9 @@
             <h5>Masjid Agung Daarussalaam Purbalingga</h5>
             <hr>
         </div>
-        <h3 type="button" class="button message">
+        <button class="button message">
             <a href="#maps-akadnikah"><b>LIHAT DENAH LOKASI</b></a>
-        </h3>
+        </button>
     </div>
     <!-- AKHIR WEDDING -->
 
@@ -108,9 +106,9 @@
         <hr>
         <img src="assets/img/couple/girl.png" data-aos="zoom-in" alt="Mempelai Pia" width="100px" class="mempelai">
         <h3 data-aos="zoom-in">
-            <i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i>
+            <i class="bi bi-heart" aria-hidden="true"></i>
 				<span>Milea Ananta</span>
-            <i class="bi-heart" style="font-size: 1rem; color: currentColor;"></i>
+            <i class="bi bi-heart" style="font-size: 1rem; color: currentColor;"></i>
         </h3>
         <h5 data-aos="zoom-in">
             Putri ke-4 dari Bapak Drs Widiyanto & Ibu Siti S.pd
@@ -209,7 +207,10 @@
                 <div class="col-sm-6">
                     <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
                         <div class="card-header pb-sm-0">
-                            <h3 class="pb-0">Wedding Online<img src="../tw01/assets/font/flower.png" alt="Wedding Online" width="75px" height="auto"></h3>
+                            <h3 class="pb-0">
+                                Wedding Online<br>
+                                <img src="../tw01/assets/font/flower.png" alt="Wedding Online" width="75px" height="auto">
+                            </h3>
                         </div>
                         <blockquote class="blockquote">
                             <h5>Temui kami secara virtual untuk menyaksikan acara pernikahan kami yang akan disiarkan langsung, dengan menekan tombol di bawah ini :</h5>
@@ -228,7 +229,9 @@
                 <div class="col sm-6">
                     <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
                         <div class="card-header pb-sm-0">
-                            <h3 class="p-0 m-0">Protokol Kesehatan<img src="../tw01/assets/font/flower.png" alt="Protokol Kesehatan" width="75px" height="auto"></h3>
+                            <h3 class="p-0 m-0">Protokol Kesehatan<br>
+                                <img src="../tw01/assets/font/flower.png" alt="Protokol Kesehatan" width="75px" height="auto">
+                            </h3>
                         </div>
                         <blockquote class="blockquote mb-0">
                             <h5>Sehubungan dengan situasi pandemi COVID-19 saat ini,</h5>
@@ -298,7 +301,7 @@
 
     <!-- AWAL STORY -->
     <div class="box story" id="story" data-aos="zoom-in">
-        <h1>Story</h1>
+        <h1>Kisah Kami</h1>
         <h5>~ Kisah Bahagia Milea & Dilan ~</h5>
         <h5>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri,
             supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.
@@ -353,9 +356,9 @@
                             <h5>Bank BNI</h5>
                             <h5>No. Rekening <b id="norek">789 789 789</b></h5>
                             <h5>a.n Dilan Damara</h5>
-                            <h3 id="tombol" onclick="copyToClipboard('#norek')">
-                                <button id="copy" class="button message p-1 mb-1">Copy nomor rekening</button>
-                            </h3>
+                            <h4 id="tombol" onclick="copyToClipboard('#norek')">
+                                <button id="copy" class="button message">Copy nomor rekening</button>
+                            </h4>
                         </blockquote>
                         <div class="card-footer">
                             <h3>Terima Kasih</h3>
@@ -366,6 +369,12 @@
                     <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
                         <div class="card-header">
                             <h3>Konfirmasi Kehadiran<br><img src="../tw01/assets/font/flower.png" alt="Konfirmasi kehadiran" width="75px" height="auto"></h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Tekan tombol dibawah ini dan pastikan kehadiranmu untuk</h5><br>
+                            <h3>milea & Dilan</h3>
+                            <button class="button message mb-4"><a href="https://wa.me/6282217283099?text=Halo Milea dan Dilan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Milea dan Dilan pada Hari Selasa, 22 Februari 2022">Konfirmasi Kehadiran untuk mempelai laki-laki</a></button>
+                            <button class="button message"><a href="https://wa.me/6282217283099?text=Halo Milea dan Dilan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Milea dan Dilan pada Hari Selasa, 22 Februari 2022">Konfirmasi Kehadiran untuk mempelai perempuan</a></button>
                         </div>
                     </div>
                 </div>
@@ -393,28 +402,6 @@
     AOS.init({
         duration: 2000,
     })
-</script>
-<script>
-    var elem = document.documentElement;
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
-
-    function closeFullscreen() {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) { /* Safari */
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) { /* IE11 */
-        document.msExitFullscreen();
-      }
-    }
 </script>
 </body>
 </html>

@@ -201,7 +201,7 @@ nav ul li {
     padding: 0.1rem;
     border-top: .5px solid #844315;
     border-radius: .8rem;
-    background-image: url('../img/ptn-bg1.jpg');
+    background-image: url('../img/ptn-bg1-.jpg');
 }
 
 nav ul li a {
@@ -290,12 +290,15 @@ AWAL CSS ALL
 
 .box {
     text-align: center;
-    box-shadow: 5px 5px 15px #b0a9a0;
+    box-shadow: 5px 5px #b0a9a0;
     padding: 1rem;
-    width: 98%;
+    width: 100%;
     margin: 1rem auto;
     outline: none;
     border-radius: 1rem;
+    box-shadow: inset 1px 1px 15px #b0a9a0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 /*-----------------------------------------------------
@@ -345,10 +348,9 @@ AWAL EVENT
 -------------------------------------------------------*/
 .mycard {
     background: inherit;
-    background-image: url(../img/checkerboard-cross.png);
+    background-image: url(../img/ptn-bg1-.jpg);
     background-size: cover;
     position: relative;
-    opacity: .8;
     border: 5px solid rgba(255, 255, 255, .15);
     box-shadow: 2px 2px 15px #b0a9a0,
         inset 1px 1px 15px #b0a9a0;

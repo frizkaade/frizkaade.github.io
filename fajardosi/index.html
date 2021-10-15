@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JetUndangan | TW01</title>
+    <meta name="keywords" content="Undangan Digital">
+    <meta name="description" content="Undangan Digital">
+    <meta name="author" content="JetUndangan">
+    <!-- Site Icon -->
+    <link rel="icon" type="assets/img" sizes="16x16" href="assets/font/favicon-16x16.png">
+    <!-- CSS Reset MeyerWeb -->
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <!-- animation on scroll CSS -->
+    <link rel="stylesheet" href="assets/styles/aos.css">
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <!-- Mine CSS -->
+	<link rel="stylesheet" href="assets/styles/style.css">
+    <!-- LightBox Galery -->
+    <link rel="stylesheet" href="assets/styles/lightbox.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Background -->
+<div id="music">
+    <button id="play"></button>
+</div>
+<!-- Akhir Background Musik -->
+
+<!-- Navigasi -->
+<nav>
+    <ul>
+        <li><a href="#wedding"><img src="assets/font/010-invitation.png" width="25px;"><br>Wedding</a></li>
+        <li><a href="#couple"><img src="assets/font/004-hearts.png" width="25px;"><br>Couple</a></li>
+        <li><a href="#event"><img src="assets/font/006-calendar.png" width="25px;"><br>Events</a></li>
+        <li><a href="#galery"><img src="assets/font/016-camera.png" width="25px;"><br>Galery</a></li>
+        <li><a href="#story"><img src="assets/font/008-wedding rings.png" width="25px;"><br>Story</a></li>
+    </ul>
+</nav>
+<!-- Akhir Navigasi -->
+
+<div class="container">
+    <!-- Halaman Cover -->
+    <div class="cover">
+        <h1 data-aos="zoom-in">Undangan</h1>
+        <h5 data-aos="zoom-in">Special Invitation</h5>
+        <img src="assets/img/img-cover.jpeg" alt="" width="180" data-aos="zoom-in">
+        <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
+        <h3 data-aos="zoom-in">
+            <script type='text/JavaScript'>
+                //ambil URL
+                var url = window.location.toString();
+                //ambil bagian parameternya
+                url.match(/\?(.+)$/);
+                var params = RegExp.$1;
+                // pisahkan parameter URL ke associative array
+                var params = params.split("+");
+                var queryStringList = {};
+                for(var i=0;i<params.length;i++)
+                {   var tmp = params[i].split("=");
+                    queryStringList[tmp[0]] = unescape(tmp[1]);
+                }
+                // tampilkan isi associative array
+                for(var i in queryStringList)
+                {   var res = queryStringList[i].replace(/[+]/g, " ");
+                    document.write(i+" ");
+                }
+            </script>
+        </h3>
+        <h3><a href="#wedding"><p class="button message" onclick="openFullscreen();">Buka Undangan</p></a>
+            <hr>
+            <h3>Waktu Menuju Acara</h3>
+            <div id="countdown" class="countdown"></div>
+        </h3>
+    </div>
+    <!-- Akhir Halaman Cover -->
+
+    <!-- AWAL WEDDING -->  
+    <div class="wedding box" id="wedding" data-aos="zoom-in">
+        <h1 data-aos="zoom-in">The Wedding</h1>
+        <h5 data-aos="zoom-in">You are Invited to the Wedding of</h5>
+        <div id="coupleName" data-aos="flip-up">
+            <h2>Dosi</h2>
+            <h2> & </h2>
+            <h2>Fajar</h2>
+        </div>
+        <div data-aos="fade-down">
+            <hr>
+            <h5>Save The Date</h5>
+            
+            <h3>- Jum'at, 29 Oktober 2021 -</h3>
+            <h5>Masjid Muhammad Cheng Hoo Purbalingga</h5>
+            <hr>
+        </div>
+        <button class="button message">
+            <a href="#maps-akadnikah"><b>LIHAT DENAH LOKASI</b></a>
+        </button>
+    </div>
+    <!-- AKHIR WEDDING -->
+
+    <!-- AWAL COUPLE -->
+    <div class="box couple" id="couple" data-aos="zoom-in">
+        <img src="assets/img/salam.png" alt="Basmallah" width="210px"><br>
+        <h5>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankan putra-putri kami :</h5>
+        <hr>
+        <img src="assets/img/couple/girl.jpeg" data-aos="zoom-in" alt="Mempelai Pia" width="100px" class="mempelai">
+        <h3 data-aos="zoom-in">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+				<span> Dosi Dwi Kartika </span>
+            <i class="fa fa-heart"></i>
+        </h3>
+        <h2>&</h2>
+        <img src="assets/img/couple/man.jpeg" data-aos="zoom-in" alt="Mempelai Wanita" width="100px" class="mempelai pt-0">
+        <h3 data-aos="zoom-in">
+            <i class="fa fa-heart"></i>
+            <span> Fajar Nur Hidayatulloh </span>
+            <i class="fa fa-heart"></i>
+        </h3>
+        <hr>
+        <h5>Untuk Mengikuti sunah rasul-MU
+            dalam rangka membentuk keluarga yang
+            sakinah, mawaddah, warahmah.
+        </h5>
+    </div>
+    <!-- AKHIR COUPLE -->
+
+    <!-- AWAL EVENT -->
+    <div class="box event" id="event" data-aos="zoom-in">
+        <h1>Save The Date</h1>
+        <h5><b>Assalamu'alaikum Warahmatullahi Wabarakatuh</b></h5>
+        <h5>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, Kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri Resepsi Pernikahan Kami yang akan di selenggarakan pada : </h5>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="mycard" data-aos="zoom-in">
+                        <div class="card-header pb-0">
+                            <h3>Akad Nikah<br>
+                                <img src="../tw01/assets/font/flower.png" alt="Akad Nikah" width="75px" height="auto">
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text" style="font-weight: bold;">Jum'at, 29 Oktober 2021</h5>
+                            <h5 class="card-text pt-2" style="font-weight: bold;">WAKTU</h5>
+                            <h5 class="card-text">07:00 WIB sd 08:00 WIB</h5>
+                            <h5 class="card-text pt-2" style="font-weight: bold;">TEMPAT</h5>
+                            <h5 class="card-text">Jl. Kalikajar, Dusun 1 Karang Blimbing, Kembaran Wetan, Kaligondang, Kabupaten Purbalingga, Jawa Tengah 53391</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="button message">
+                                <a href="#maps-akadnikah">LOKASI</a>
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="" data-aos="zoom-in">
+                        <h3 id="maps-akadnikah">Lokasi Akad Nikah</h3>
+                        <!-- Elemen yang akan menjadi kontainer peta -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d989.1947997431419!2d109.3975932274938!3d-7.378625443939761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjInNDMuMyJTIDEwOcKwMjMnNTEuMyJF!5e0!3m2!1sen!2sid!4v1634258654907!5m2!1sen!2sid" width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"></iframe><br>
+                        <button type="button" class="button message">
+                            <a href="https://www.google.com/maps/place/-7.378681,+109.397595/@-7.378633,109.3975054,19z" target="_blank">BUKA MAP</a>
+                        </button>    
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mycard" data-aos="zoom-in">
+                        <div class="card-header pb-0">
+                            <h3>Resepsi<br>
+                                <img src="../tw01/assets/font/flower.png" alt="Resepsi Pernikahan" width="75px" height="auto">
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text" style="font-weight: bold;">Jum'at, 29 Oktober 2021</h5>
+                            <h5 class="card-text pt-2" style="font-weight: bold;">WAKTU</h5>
+                            <h5 class="card-text">09:00 WIB sd SELESAI</h5>
+                            <h5 class="card-text pt-2" style="font-weight: bold;">TEMPAT</h5>
+                            <h5 class="card-text">Masjid Muhammad Cheng Hoo Purbalingga</h5>
+                            <h5 class="card-text">Dusun 3, Selaganggeng, Kec. Mrebet, Kabupaten Purbalingga, Jawa Tengah 53352</h5>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="button message mr-3">
+                                <a href="#maps-resepsi">LIHAT LOKASI</a>
+                            </button> 
+                            <button type="button" class="button message">
+                                <a target="_blank" href="https://calendar.google.com/calendar/embed?src=jetundangan%40gmail.com&ctz=Asia%2FJakarta">SIMPAN ACARA</a>
+                            </button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="" data-aos="zoom-in">
+                        <h3 id="maps-resepsi">Lokasi Resepsi Pernikahan</h3>
+                        <!-- Elemen yang akan menjadi kontainer peta -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7914.644933985735!2d109.3620894!3d-7.3176267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ff79a403bad81%3A0x793c579da08db415!2sMasjid%20Muhammad%20Cheng%20Hoo%20Purbalingga!5e0!3m2!1sid!2sid!4v1634259466240!5m2!1sid!2sid" width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"></iframe><br>
+                        <button type="button" class="button message">
+                            <a href="https://www.google.com/maps/place/Masjid+Muhammad+Cheng+Hoo+Purbalingga,+Dusun+3,+Selaganggeng,+Kec.+Mrebet,+Kabupaten+Purbalingga,+Jawa+Tengah+53352/@-7.3176267,109.3620894,16z/data=!4m2!3m1!1s0x2e6ff79a403bad81:0x793c579da08db415?hl=id" target="_blank">BUKA MAP</a>
+                        </button>    
+                        <hr>
+                    </div>
+                </div>
+                <div class="col sm-6">
+                    <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+                        <div class="card-header pb-sm-0">
+                            <h3>Protokol Kesehatan<br>
+                                <img src="../tw01/assets/font/flower.png" alt="Protokol Kesehatan" width="75px" height="auto">
+                            </h3>
+                        </div>
+                        <blockquote class="blockquote mb-0">
+                            <h5>Sehubungan dengan situasi pandemi COVID-19 saat ini,</h5>
+                            <h5>tanpa mengurangi rasa hormat kami kepada Bapak/Ibu/Saudara/i,</h5>
+                            <h5>acara pernikahan kami akan dilaksanakan dengan menerapkan standar protokol kesehatan.</h5>
+                            <hr>
+                            <img src="../tw01/assets/font/prokes/mask.png" alt="Gunakan Masker Atau Faceshield" width="75px" height="auto">
+                            <h5>Gunakan Masker Atau Faceshield</h5>
+                            <img src="../tw01/assets/font/prokes/wash.png" alt="Cuci tangan menggunakan Handsanitizer" width="75px" height="auto">
+                            <h5>Cuci tangan menggunakan Handsanitizer</h5>
+                            <img src="../tw01/assets/font/prokes/social_distance.png" alt="Menjaga Jarak" width="75px" height="auto">
+                            <h5>Menjaga Jarak</h5>
+                            <hr>
+                            <h5>Terima kasih atas pengertian Bapak/Ibu/Saudara/i, semoga dengan melakukan protokol kesehatan di atas, kita semua dapat terhindar dari Covid-19.</h5>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+                        <div class="card-header pb-sm-0">
+                            <h3>Konfirmasi Kehadiran<br><img src="../tw01/assets/font/flower.png" alt="Konfirmasi kehadiran" width="75px" height="auto"></h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Tekan tombol dibawah ini dan pastikan kehadiranmu untuk</h5>
+                            <h2 class="p-4">Dosi & Fajar</h2>
+                            <button class="button message mb-4"><a href="https://wa.me/6282133010400?text=Halo Fajar,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Dosi dan Fajar pada Hari Jum'at, 29 Oktober 2021">Konfirmasi Kehadiran untuk mempelai pria</a></button>
+                            <button class="button message"><a href="https://wa.me/6282226185300?text=Halo Dosi,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Dosi dan Fajar pada Hari Jum'at, 29 Oktober 2021">Konfirmasi Kehadiran untuk mempelai wanita</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h5>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.</h5>
+        <h5>Atas kehadiran serta doa restu, kami ucapkan terima kasih.</h5>
+        <h5><b>Wassalamualaikum Warahmatullahi Wabarakatuh</b></h5>
+    </div>
+    <!-- AKHIR EVENT -->
+
+    <!-- AWAL GALERY -->
+    <div class="box galery" id="galery" data-aos="zoom-in">
+        <h1>Galery</h1>
+        <h3>~ Moment terindah Dosi & Fajar ~</h3>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/1.jpeg"
+                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/1.jpeg" alt=""/>
+                    </a>
+                </div>
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/2.jpeg" 
+                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/2.jpeg" alt=""/>
+                    </a>
+                </div>
+                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                    <a class="example-image-link" href="./assets/img/galery/3.jpeg" 
+                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/3.jpeg" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR GALERY -->
+
+    <!-- AWAL STORY -->
+    <div class="box story" id="story" data-aos="zoom-in">
+        <h1>Kisah Kami</h1>
+        <h3>~ Kisah Bahagia Dosi & Fajar ~</h3>
+        <h5>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri,
+            supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.
+            Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”</h5>
+        <h5>QS. Ar-Rum : 21</h5>
+        <div class="timeline">
+            <div class="container-story left">
+                <div class="content" data-aos="zoom-in">
+                    <h3>First Meet</h3>
+                    <h6>Pertama ketemu tahun 2018 di FIF Bobotsari</h6>
+                </div>
+            </div>
+            <div class="container-story right">
+                <div class="content" data-aos="zoom-in">
+                    <h3>First Date</h3>
+                    <h6>Pertama kali kencan di kopi suluk tahun 2019, namun beberapa hari setelah itu ada jarak di antara kita karena kesibukan masing-masing dan lost contact.</h6>
+                </div>
+            </div>
+            <div class="container-story left">
+                <div class="content" data-aos="zoom-in">
+                    <h3>Engagement</h3>
+                    <h6>Dan pada akhirnya kemudian di pertemukan lagi di bulan februari tahun 2021, tak lama dari awal kembali pertemuan di tahun 2021 mas fajar mengenalkan aku ke keluarganya pada tgl 3 april 2021, kemudian mas fajar datang kerumah meminta izin dan restu ke kedua orangtuaku pada tgl 18 april 2021 kemudian kami memutuskan untuk bertunangan pd tgl 8 agustus 2021</h6>
+                </div>
+            </div>
+            <div class="container-story right">
+                <div class="content" data-aos="zoom-in">
+                    <h3>The Wedding</h3>
+                    <h6>Setelah melewati perjalanan panjang dan tidak mudah. Finally kita dipertemukan Allah SWT untuk mengucap janji suci pernikahan.</h6>
+                    <h6>di tahun ini adalah moment kebahagiaan untuk kami, memulai hidup bersama untuk membangun keluarga yg selalu saling membahagiakan. Semoga Allah SWT senantiasa meridhoi jalan kami serta memberikan keberkahan untuk pernikahan kami</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR STORY -->
+</div>
+
+<!-- Modal -->
+<!-- End Modal -->
+
+<!-- AWAL FOOTER -->
+<footer class="box">
+    <div class="container">
+        <div class="row">
+        <div class="text-center p-4">
+        <h4>
+            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri,
+             supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.
+              Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”
+        </h4>
+
+        <h5><b>QS. Ar-Rum : 21</b></h5>
+        <h5>Design with Love by <a href="https://jetundangan.com" target="_blank"><b>JetUndangan.com</b></a></h5>
+        </div>
+        </div>
+    </div>
+</footer>
+<!-- AKHIR FOOTER -->
+<script src="assets/script/jquery-3.5.1.js"></script>
+<script src="assets/script/script.js"></script>
+<script src="assets/script/aos.js"></script>
+<script src="assets/script/bootstrap.min.js"></script>
+<script src="assets/script/lightbox.js"></script>
+<script>
+    AOS.init({
+        duration: 2000,
+    })
+</script>
+</body>
+</html>

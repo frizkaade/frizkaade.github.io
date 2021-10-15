@@ -200,9 +200,14 @@ nav ul li {
     float: left;
     width: 20%;
     padding: 0.1rem;
-    border-top: .5px solid #844315;
+    /* border-top: .5px solid #844315; */
     border-radius: .8rem;
-    background-image: url('../img/ptn-bg1-.jpg');
+    /* background-image: url('../img/ptn-bg1-.jpg'); */
+    box-shadow: inset 1px 1px 15px #b0a9a0;
+    background-image: url(../img/ptn-bg1-.jpg);
+    background-size: cover;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 nav ul li a {
@@ -388,13 +393,12 @@ footer p {
     text-align: center;
     width: 100%;
     outline: none;
-    border-radius: 10% 10% 0% 0%;
     background-size: cover;
     font-family: 'Tangerine', cursive;
 }
 
 footer {
-    height: 300px;
+    height: 90px;
 }
 
 /*-----------------------------------------------------

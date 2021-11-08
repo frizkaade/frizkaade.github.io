@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&display=swap');
 
 :root {
   --primary: #7F7C82;
@@ -25,11 +26,11 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
   line-height: 1.7;
   color: #7F7C82;
-  background-color: #F3F1F5;
+  background-color: #ffffff;
 }
 
 a {
@@ -58,19 +59,20 @@ h6,
 h1,
 .h1 {
   font-size: 3rem;
-  font-family: 'Great Vibes', cursive;
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Playfair Display', serif;
 }
 
 h2,
 .h2 {
   font-size: 2.5rem;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Playfair Display', serif;
 }
 
 h3,
 .h3 {
   font-size: 2rem;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Playfair Display', serif;
 }
 
 h4,
@@ -2145,7 +2147,7 @@ hr {
 }
 
 .navbar-expand-lg.navbar-floating.navbar-light {
-  background-color: #F3F1F5;
+  background-color: #F0D9FF;
   box-shadow: 0 1px 6px rgba(56, 51, 64, 0.1);
 }
 

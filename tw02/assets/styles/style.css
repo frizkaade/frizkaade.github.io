@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 /*------------------------------------------------------------------
     IMPORT CSS
 -------------------------------------------------------------------*/
@@ -35,11 +36,11 @@ AWAL CSS FOR ALL
 }
 
 body {
-    color: #844315;
+    color: #721b29;
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../img/ptn-bg1.jpg);
+    background-color: #721b29;
     background-size: cover;
     height: 100vh;
 }
@@ -199,9 +200,14 @@ nav ul li {
     float: left;
     width: 20%;
     padding: 0.1rem;
-    border-top: .5px solid #844315;
+    border-top: .8px solid #721b29;
     border-radius: .8rem;
-    background-image: url('../img/ptn-bg1-.jpg');
+    box-shadow: inset 3px 3px 5px #721b29;
+    background-color: #FDF8E8;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    opacity: .9;
 }
 
 nav ul li a {
@@ -213,7 +219,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #844315;
+    color: #721b29;
     opacity: 1;
     font-weight: bold;
 }
@@ -227,6 +233,7 @@ AKHIR NAVIGASI
 AWAL COVER
 -------------------------------------------------------*/
 .cover {
+    color: #FDF8E8;
     padding-top: .8rem;
     text-align: center;
     min-height: 720px;
@@ -242,10 +249,10 @@ AWAL COVER
 }
 
 .cover img {
-    box-shadow: 5px 5px 15px #b0a9a0;
+    box-shadow: 5px 5px 15px #FDF8E8;
     margin: 15px auto;
-    border-radius: 100%;
-    width: 180px;
+    border-radius: 50%;
+    width: 250px;
 }
 
 .button {
@@ -275,8 +282,8 @@ AWAL COVER
     box-shadow: 0 0 30px #fff, inset 0 0 10px #fff;
     padding: 10px;
     border-radius: 20px;
-    background-color: #b0a9a0;
-    color: #ffff;
+    background-color: #721b29;
+    color: #FDF8E8;
 }
 
 /*-----------------------------------------------------
@@ -297,9 +304,11 @@ AWAL CSS ALL
     outline: none;
     border-radius: 1rem;
     box-shadow: inset 1px 1px 15px #b0a9a0;
-    background-color: rgba(255, 255, 255, .5);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    background-image: url(../img/ptn-bg2.png);
+    background-size: cover;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    text-shadow: 0 0 1px #b0a9a0;
 }
 
 /*-----------------------------------------------------
@@ -319,7 +328,7 @@ AWAL WEDDING
     background: url(../img/frame-6543169.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 11em;
+    background-size: 17em;
     padding: 3.5em;
     text-shadow: 0 0 5px #ddc08c;
 }
@@ -335,9 +344,8 @@ AWAL COUPLE
 -------------------------------------------------------*/
 
 .couple .mempelai {
-    box-shadow: 5px 5px 15px #b0a9a0;
+    box-shadow: 5px 5px 15px #721b29;
     border-radius: 100%;
-    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 
@@ -379,19 +387,20 @@ AKHIR STORY
 /*-----------------------------------------------------
 AWAL FOOTER
 -------------------------------------------------------*/
-footer img {
-    width: 80px;
-}
-
 footer p {
-    color: #b3aeb5;
     font-size: 12px;
 }
 
+.quote {
+    text-align: center;
+    width: 100%;
+    outline: none;
+    background-size: cover;
+    font-family: 'Tangerine', cursive;
+}
+
 footer {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    height: 150px;
+    height: 90px;
 }
 
 /*-----------------------------------------------------

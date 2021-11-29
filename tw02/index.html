@@ -29,6 +29,7 @@
 <!-- Akhir Background Musik -->
 
 <!-- Navigasi -->
+<div class="container">
 <nav>
     <ul>
         <li><a href="#wedding"><img src="assets/font/010-invitation.png" width="25px;"><br>Wedding</a></li>
@@ -38,41 +39,49 @@
         <li><a href="#story"><img src="assets/font/008-wedding rings.png" width="25px;"><br>Story</a></li>
     </ul>
 </nav>
+</div>
 <!-- Akhir Navigasi -->
 
 <div class="container">
-    <!-- Halaman Cover -->
-    <div class="cover">
-        <h1 data-aos="zoom-in">Undangan</h1>
-        <h5 data-aos="zoom-in">Special Invitation</h5>
-        <img src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
-        <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
-        <h3 data-aos="zoom-in">
-            <script type='text/JavaScript'>
-                //ambil URL
-                var url = window.location.toString();
-                //ambil bagian parameternya
-                url.match(/\?(.+)$/);
-                var params = RegExp.$1;
-                // pisahkan parameter URL ke associative array
-                var params = params.split("+");
-                var queryStringList = {};
-                for(var i=0;i<params.length;i++)
-                {   var tmp = params[i].split("=");
-                    queryStringList[tmp[0]] = unescape(tmp[1]);
-                }
-                // tampilkan isi associative array
-                for(var i in queryStringList)
-                {   var res = queryStringList[i].replace(/[+]/g, " ");
-                    document.write(i+" ");
-                }
-            </script>
-        </h3>
-        <h3><a href="#wedding"><p class="button message" onclick="openFullscreen();">Buka Undangan</p></a>
-            <hr>
-            <h3>Waktu Menuju Acara</h3>
-            <div id="countdown" class="countdown"></div>
-        </h3>
+    <div id="myModal" class="modal fade cover" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content align-items-center">
+                <div class="modal-header">
+                    <h1>Undangan</h1>
+                </div>
+                <div class="modal-body">
+                    <h5>Special Invitation</h5>
+                    <img src="assets/img/img-cover.png" alt="Cover Image">
+                    <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
+                    <h3 data-aos="zoom-in">
+                        <script type='text/JavaScript'>
+                            //ambil URL
+                            var url = window.location.toString();
+                            //ambil bagian parameternya
+                            url.match(/\?(.+)$/);
+                            var params = RegExp.$1;
+                            // pisahkan parameter URL ke associative array
+                            var params = params.split("+");
+                            var queryStringList = {};
+                            for(var i=0;i<params.length;i++)
+                            {   var tmp = params[i].split("=");
+                                queryStringList[tmp[0]] = unescape(tmp[1]);
+                            }
+                            // tampilkan isi associative array
+                            for(var i in queryStringList)
+                            {   var res = queryStringList[i].replace(/[+]/g, " ");
+                                document.write(i+" ");
+                            }
+                        </script>
+                    </h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal" onclick="openFullscreen();" id="play"><a href="#wedding">Buka Undangan</a></button>
+                </div>
+            </div>
+    
+        </div>
     </div>
     <!-- Akhir Halaman Cover -->
 
@@ -91,6 +100,8 @@
             
             <h3>- Selasa, 22 Februari 2022 -</h3>
             <h5>Masjid Agung Daarussalaam Purbalingga</h5>
+            <h4>Waktu Menuju Acara</h4>
+            <div id="countdown" class="countdown"></div>
             <hr>
         </div>
         <button class="button message">
@@ -400,6 +411,7 @@
     AOS.init({
         duration: 2000,
     })
+    $('#myModal').modal('show');
 </script>
 </body>
 </html>

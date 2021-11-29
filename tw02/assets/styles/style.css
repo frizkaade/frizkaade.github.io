@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&display=swap');
 /*------------------------------------------------------------------
     IMPORT CSS
 -------------------------------------------------------------------*/
@@ -167,7 +168,7 @@ button:focus {
 h1,
 h2,
 h3 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Playfair Display', serif;
     font-weight: bold;
 }
 
@@ -193,17 +194,16 @@ nav {
 nav ul {
     overflow: hidden;
     width: 100%;
-
 }
 
 nav ul li {
     float: left;
     width: 20%;
     padding: 0.1rem;
-    border-top: .8px solid #721b29;
+    border-top: .5px solid #721b29;
     border-radius: .8rem;
-    box-shadow: inset 3px 3px 5px #721b29;
-    background-color: #FDF8E8;
+    box-shadow: inset .5px .5px 1.5px #007bff;
+    background-color: #ffff;
     background-size: cover;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -215,7 +215,7 @@ nav ul li a {
     text-align: center;
     font-size: 1em;
     opacity: 0.8;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Playfair Display', serif;
 }
 
 nav ul li a:hover {
@@ -228,31 +228,23 @@ nav ul li a:hover {
 AKHIR NAVIGASI
 -------------------------------------------------------*/
 
-
 /*-----------------------------------------------------
 AWAL COVER
 -------------------------------------------------------*/
 .cover {
-    color: #FDF8E8;
-    padding-top: .8rem;
+    color: #721b29;
     text-align: center;
-    min-height: 720px;
 }
 
-.cover h1 {
-    font-size: 4rem;
-}
-
-.cover h2 {
-    font-size: 2rem;
-    margin: 0.25rem auto;
+.modal-content {
+    background-image: url(../img/ptn-bg2.jpg);
 }
 
 .cover img {
-    box-shadow: 5px 5px 15px #FDF8E8;
-    margin: 15px auto;
+    box-shadow: 5px 5px 15px #721b29;
+    margin: 5px auto;
     border-radius: 50%;
-    width: 250px;
+    width: 180px;
 }
 
 .button {
@@ -304,7 +296,7 @@ AWAL CSS ALL
     outline: none;
     border-radius: 1rem;
     box-shadow: inset 1px 1px 15px #b0a9a0;
-    background-image: url(../img/ptn-bg2.jpg);
+    background-image: url(../img/ptn-bg1.jpg);
     background-size: cover;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -357,7 +349,7 @@ AWAL EVENT
 -------------------------------------------------------*/
 .mycard {
     background: inherit;
-    background-image: url(../img/ptn-bg1-.jpg);
+    background-image: url(../img/ptn-bg2.jpg);
     background-size: cover;
     position: relative;
     box-shadow: inset 1px 1px 10px #b0a9a0;

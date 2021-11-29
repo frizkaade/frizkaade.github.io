@@ -70,7 +70,7 @@ if (distance < 0) {
 var musik=new Audio();
 musik.src="assets/media/WeddingStoryMusic.mp3";
 musik.loop=true;
-musik.play();
+musik.pause();
 
 function mulaiAudio(){
   var play=document.getElementById("play");
@@ -129,4 +129,4 @@ function closeFullscreen() {
   } else if (document.msExitFullscreen) { /* IE11 */
     document.msExitFullscreen();
   }
-} 
+}

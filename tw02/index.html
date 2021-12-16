@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ID">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,49 +42,49 @@
 </div>
 <!-- Akhir Navigasi -->
 
-<div class="container">
-    <div id="myModal" class="modal fade cover" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <!-- Modal content-->
-            <div class="modal-content align-items-center">
-                <div class="modal-header">
-                    <h1>Undangan</h1>
-                </div>
-                <div class="modal-body">
-                    <h5>Special Invitation</h5>
-                    <img src="assets/img/img-cover.png" alt="Cover Image">
-                    <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
-                    <h3 data-aos="zoom-in">
-                        <script type='text/JavaScript'>
-                            //ambil URL
-                            var url = window.location.toString();
-                            //ambil bagian parameternya
-                            url.match(/\?(.+)$/);
-                            var params = RegExp.$1;
-                            // pisahkan parameter URL ke associative array
-                            var params = params.split("+");
-                            var queryStringList = {};
-                            for(var i=0;i<params.length;i++)
-                            {   var tmp = params[i].split("=");
-                                queryStringList[tmp[0]] = unescape(tmp[1]);
-                            }
-                            // tampilkan isi associative array
-                            for(var i in queryStringList)
-                            {   var res = queryStringList[i].replace(/[+]/g, " ");
-                                document.write(i+" ");
-                            }
-                        </script>
-                    </h3>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal" onclick="openFullscreen();" id="play"><a href="#wedding">Buka Undangan</a></button>
-                </div>
+<!-- awal cover -->
+<div id="myModal" class="modal fade cover" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <!-- Modal content-->
+        <div class="modal-content align-items-center">
+            <div class="modal-header">
+                <h1>Undangan</h1>
             </div>
-    
+            <div class="modal-body">
+                <h5>Special Invitation</h5>
+                <img src="assets/img/img-cover.png" alt="Cover Image">
+                <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
+                <h3 data-aos="zoom-in">
+                    <script type='text/JavaScript'>
+                        //ambil URL
+                        var url = window.location.toString();
+                        //ambil bagian parameternya
+                        url.match(/\?(.+)$/);
+                        var params = RegExp.$1;
+                        // pisahkan parameter URL ke associative array
+                        var params = params.split("+");
+                        var queryStringList = {};
+                        for(var i=0;i<params.length;i++)
+                        {   var tmp = params[i].split("=");
+                            queryStringList[tmp[0]] = unescape(tmp[1]);
+                        }
+                        // tampilkan isi associative array
+                        for(var i in queryStringList)
+                        {   var res = queryStringList[i].replace(/[+]/g, " ");
+                            document.write(i+" ");
+                        }
+                    </script>
+                </h3>
+            </div>
+            <div class="modal-footer">
+                <button id="bukaundangan" type="button" class="btn btn-primary" data-dismiss="modal" onclick="openfullscreen();"><a href="#wedding">Buka Undangan</a></button>
+            </div>
         </div>
     </div>
-    <!-- Akhir Halaman Cover -->
+</div>
+<!-- Akhir Halaman Cover -->
 
+<div class="container">
     <!-- AWAL WEDDING -->  
     <div class="wedding box" id="wedding" data-aos="zoom-in">
         <h1 data-aos="zoom-in">The Wedding</h1>
@@ -117,18 +117,18 @@
         <hr>
         <img src="assets/img/couple/girl.png" data-aos="zoom-in" alt="Mempelai Pia" width="100px" class="mempelai">
         <h3 data-aos="zoom-in">
-            <i class="fa fa-heart" aria-hidden="true"></i>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
 				<span> Milea Ananta </span>
-            <i class="fa fa-heart"></i>
+            <i class="fa fa-heart-o"></i>
         </h3>
         <h5 data-aos="zoom-in">
             Putri ke-4 dari Bapak Drs Widiyanto & Ibu Siti S.pd
         </h5>
         <img src="assets/img/couple/man.png" data-aos="zoom-in" alt="Mempelai Wanita" width="100px" class="mempelai">
         <h3 data-aos="zoom-in">
-            <i class="fa fa-heart"></i>
+            <i class="fa fa-heart-o"></i>
             <span>Dilan Damara</span>
-            <i class="fa fa-heart"></i>
+            <i class="fa fa-heart-o"></i>
         </h3>
         <h5 data-aos="zoom-in">
             Putra ke-2 Dari Bapak Drs Widiyanto & Ibu Siti S.pd
@@ -392,9 +392,6 @@
     </div>
 </div>
 
-<!-- Modal -->
-<!-- End Modal -->
-
 <!-- AWAL FOOTER -->
 <div class="footer">
 <footer>
@@ -411,7 +408,8 @@
     AOS.init({
         duration: 2000,
     })
-    $('#myModal').modal('show');
+
+    $('#myModal').modal('show');   
 </script>
 </body>
 </html>

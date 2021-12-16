@@ -237,7 +237,24 @@ AWAL COVER
 }
 
 .modal-content {
-    background-image: url(../img/ptn-bg2.jpg);
+    background-image: url(../img/ptn-bg1.jpg);
+    transition: 0.5s;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4),
+        0 0 10px rgba(0, 0, 0, 0.2) inset;
+    margin: 1rem auto;
+    border-radius: 10px;
+    text-align: center;
+    color: #454545;
+}
+
+.modal-content a {
+    color: #ffff;
+}
+
+.modal-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 .cover img {
@@ -284,15 +301,15 @@ AKHIR COVER
 /*-----------------------------------------------------
 AWAL CSS ALL
 -------------------------------------------------------*/
-.container {
+/* .container {
     display: grid;
-}
+} */
 
 .box {
     text-align: center;
     padding: 1rem;
     width: 100%;
-    margin: 1rem auto;
+    margin-bottom: 1rem;
     outline: none;
     border-radius: 1rem;
     box-shadow: inset 1px 1px 15px #b0a9a0;

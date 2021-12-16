@@ -73,9 +73,11 @@ musik.loop=true;
 musik.pause();
 
 function mulaiAudio(){
+  var play=document.getElementById("bukaundangan");
   var play=document.getElementById("play");
 
   play.addEventListener('click', fplay);
+  bukaundangan.addEventListener('click', fplay);
 
   function fplay(){
     if(musik.paused){

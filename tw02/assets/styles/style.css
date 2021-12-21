@@ -2,8 +2,6 @@
     IMPORT FONTS
 -------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&display=swap');
 /*------------------------------------------------------------------
@@ -259,7 +257,7 @@ AWAL COVER
 
 .cover img {
     box-shadow: 5px 5px 15px #721b29;
-    margin: 5px auto;
+    margin: 10px auto;
     border-radius: 50%;
     width: 180px;
 }

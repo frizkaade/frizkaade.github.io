@@ -66,13 +66,12 @@ h6 {
     font-weight: normal;
     position: relative;
     padding: 0 0 10px 0;
-    font-weight: normal;
     line-height: 120% !important;
     margin: 0
 }
 
 h1 {
-    font-size: 24px
+    font-size: 28px;
 }
 
 h2 {
@@ -103,7 +102,7 @@ h5 a,
 h6 a {
     color: #721B29;
     text-decoration: none !important;
-    opacity: 1
+    opacity: .8
 }
 
 h1 a:hover,
@@ -112,7 +111,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-    opacity: 1
+    opacity: 1;
 }
 
 a {
@@ -165,14 +164,10 @@ button:focus {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-}
-
-h1,
-h2 {
-    font-size: 2rem;
 }
 
 /*-----------------------------------------------------
@@ -263,8 +258,7 @@ AWAL COVER
 }
 
 .button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: .6em;
+    font-size: .8rem;
     display: inline-block;
     border-radius: 2em;
     text-align: center;
@@ -299,10 +293,6 @@ AKHIR COVER
 /*-----------------------------------------------------
 AWAL CSS ALL
 -------------------------------------------------------*/
-/* .container {
-    display: grid;
-} */
-
 .box {
     text-align: center;
     padding: 1rem;
@@ -404,10 +394,6 @@ footer p {
     outline: none;
     background-size: cover;
     font-family: 'Tangerine', cursive;
-}
-
-footer {
-    height: 90px;
 }
 
 /*-----------------------------------------------------

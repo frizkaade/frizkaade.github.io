@@ -109,6 +109,9 @@ $(document).ready(function() {
   $("#tombol").click(function() {
     $("#copy").text("Berhasil di salin");
   })
+  $("#tombol2").click(function() {
+    $("#copy2").text("Berhasil di salin");
+  })
 
 });
 

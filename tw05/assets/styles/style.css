@@ -1,0 +1,367 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css2?family=Engagement&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+/*------------------------------------------------------------------
+    IMPORT CSS
+-------------------------------------------------------------------*/
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(magnific-popup.css);
+@import url(responsiveslides.css);
+@import url(timeline.css);
+@import url(flaticon.css);
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+/*-----------------------------------------------------
+AWAL CSS FOR ALL
+-------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #060606;
+  --color-primary-light: #c4c4c4;
+  --color-secondary: #e8e9ee;
+  --color-shadow: #e8e9ee;
+  --color-white: #ffffff;
+}
+
+body {
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-size: cover;
+  height: 100vh;
+}
+
+a {
+  color: #721b29;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  line-height: 120% !important;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #721b29;
+  text-decoration: none !important;
+  opacity: 1;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+.btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+button:focus {
+  outline: none;
+}
+
+#music {
+  position: fixed;
+  right: 3%;
+  top: 20%;
+  z-index: 1000;
+  display: grid;
+}
+
+#music button {
+  border: transparent;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+#music #play {
+  background: url("../font/play.svg") no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+}
+
+/*-----------------------------------------------------
+AKHIR CSS FOR ALL
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL COVER
+-------------------------------------------------------*/
+.cover {
+  padding-top: 0.8rem;
+  text-align: center;
+  min-height: 720px;
+}
+
+.cover h1 {
+  font-size: 2.5em;
+  font-family: "Engagement", cursive;
+  /* letter-spacing: 0.2em; */
+}
+
+.cover h2 {
+  font-size: 2rem;
+  margin: 0.25rem auto;
+  font-family: "Engagement", cursive;
+}
+
+.cover > .nama-tamu {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cover img {
+  /* box-shadow: 5px 5px 15px #b0a9a0; */
+  margin: 15px auto;
+  /* border-radius: 50%; */
+  width: 250px;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6em;
+  display: inline-block;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.message {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+  box-shadow: 0 0 1rem var(--color-shadow);
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.countdown {
+  box-shadow: 0 0 30px #fff, inset 0 0 10px #fff;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #b0a9a0;
+  color: #ffff;
+}
+
+/*-----------------------------------------------------
+AKHIR COVER
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL CSS ALL
+-------------------------------------------------------*/
+.container {
+  display: grid;
+}
+
+.box {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem auto;
+  outline: none;
+  border-radius: 1rem;
+  box-shadow: inset 1px 1px 15px #b0a9a0;
+  /* background-image: url(../img/ptn-bg1.jpg);
+  background-size: cover; */
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  text-shadow: 0 0 1px var(--color-shadow);
+}
+
+/*-----------------------------------------------------
+AKHIR CSS ALL
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL WEDDING
+-------------------------------------------------------*/
+.wedding h2 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+#coupleName {
+  background: url(../img/frame-6543169.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11em;
+  padding: 3.5em;
+  text-shadow: 0 0 5px #ddc08c;
+}
+
+/*-----------------------------------------------------
+AKHIR WEDDING
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL COUPLE
+-------------------------------------------------------*/
+
+.couple .mempelai {
+  box-shadow: 5px 5px 15px #b0a9a0;
+  border-radius: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/*-----------------------------------------------------
+AKHIR COUPLE
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL EVENT
+-------------------------------------------------------*/
+.mycard {
+  background: inherit;
+  /* background-image: url(../img/ptn-bg1-.jpg); */
+  background-color: var(--color-secondary);
+  background-size: cover;
+  position: relative;
+  /* box-shadow: inset 1px 1px 7px var(--color-shadow); */
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+/*-----------------------------------------------------
+AKHIR EVENT
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL GALERY
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AKHIR GALERY
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL GALERY
+-------------------------------------------------------*/
+/* AWAL STORY */
+
+/*-----------------------------------------------------
+AKHIR STORY
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL FOOTER
+-------------------------------------------------------*/
+footer p {
+  font-size: 10px;
+}
+
+.quote {
+  text-align: center;
+  width: 100%;
+  outline: none;
+  background-size: cover;
+  font-family: "Tangerine", cursive;
+}
+
+footer {
+  height: 90px;
+}
+
+/*-----------------------------------------------------
+AKHIR FOOTER
+-------------------------------------------------------*/

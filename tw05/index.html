@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>JU | TW05</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JU | TW05</title>
     <meta name="keywords" content="Undangan Digital">
     <meta name="description" content="Undangan Digital">
     <meta name="author" content="Undangan Digital">
@@ -16,447 +17,490 @@
     <!-- Bootsrap -->
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <!-- Mine CSS -->
-	<link rel="stylesheet" href="assets/styles/style.css">
-	<link rel="stylesheet" href="assets/styles/sampul.css">
-	<link rel="stylesheet" href="assets/styles/nav.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/sampul.css">
+    <link rel="stylesheet" href="assets/styles/nav.css">
     <!-- LightBox Galery -->
     <link rel="stylesheet" href="assets/styles/lightbox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- Background -->
-<div id="music">
-    <button id="play"></button>
-</div>
-<!-- Akhir Background Musik -->
+    <!-- Background -->
+    <div id="music">
+        <button id="play"></button>
+    </div>
+    <!-- Akhir Background Musik -->
 
-<!-- Navigasi -->
-<div class="tab-menu">
-    <ul class="tab-menu__list">
-        <a href="#wedding">
-            <li class="tab-menu__item tab-menu__active">
-                <span class="tab-menu__icon"><i class="ri-home-heart-line"></i></span>
-                <span class="tab-menu__text">Home</span>
-            </li>
-        </a>
-        <a href="#couple">
-            <li class="tab-menu__item">
-                <span class="tab-menu__icon"><i class="ri-hearts-line"></i></span>
-                <span class="tab-menu__text">Mempelai</span>
-            </li>
-        </a>
-        <a href="#event">
-            <li class="tab-menu__item">
-                <span class="tab-menu__icon"><i class="ri-calendar-check-line"></i></span>
-                <span class="tab-menu__text">Acara</span>
-            </li>
-        </a>
-        <a href="#galery">
-            <li class="tab-menu__item">
-                <span class="tab-menu__icon"><i class="ri-map-pin-line"></i></span>
-                <span class="tab-menu__text">Lokasi</span>
-            </li>
-        </a>
-        <a href="#story">
-            <li class="tab-menu__item">
-                <span class="tab-menu__icon"><i class="ri-chat-heart-line"></i></span>
-                <span class="tab-menu__text">Ucapan</span>
-            </li>
-        </a>
-    </ul>
-</div>
-<!-- Akhir Navigasi -->
+    <!-- Navigasi -->
+    <div class="tab-menu">
+        <ul class="tab-menu__list">
+            <a href="#wedding">
+                <li class="tab-menu__item tab-menu__active">
+                    <span class="tab-menu__icon"><i class="ri-home-heart-line"></i></span>
+                    <span class="tab-menu__text">Home</span>
+                </li>
+            </a>
+            <a href="#couple">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-hearts-line"></i></span>
+                    <span class="tab-menu__text">Mempelai</span>
+                </li>
+            </a>
+            <a href="#event">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-calendar-check-line"></i></span>
+                    <span class="tab-menu__text">Acara</span>
+                </li>
+            </a>
+            <a href="#galery">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-map-pin-line"></i></span>
+                    <span class="tab-menu__text">Lokasi</span>
+                </li>
+            </a>
+            <a href="#story">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-chat-heart-line"></i></span>
+                    <span class="tab-menu__text">Ucapan</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <!-- Akhir Navigasi -->
 
-<div class="container">
-    <!-- Halaman Cover -->
-    <div class="cover">
-        <h2 data-aos="zoom-in">UNDANGAN</h2>
-        <h5 data-aos="zoom-in">Special Invitation</h5>
-        <img src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
-        <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
-        <h3 class="nama-tamu" data-aos="zoom-in">
-            <script type='text/JavaScript'>
-                //ambil URL
-                var url = window.location.toString();
-                //ambil bagian parameternya
-                url.match(/\?to=(.+)$/);
-                var params = RegExp.$1;
-                // pisahkan parameter URL ke associative array
-                var params = params.split("+");
-                var queryStringList = {};
-                for(var i=0;i<params.length;i++)
-                {   var tmp = params[i].split("=");
-                    queryStringList[tmp[0]] = unescape(tmp[1]);
-                }
-                // tampilkan isi associative array
-                for(var i in queryStringList)
-                {   var res = queryStringList[i].replace(/[+]/g, " ");
-                    document.write(i+" ");
-                }
-            </script>
-        </h3>
-        <h3><a href="#wedding"><p class="button message" onclick="openFullscreen();">Buka Undangan</p></a>
-            <hr>
-            <h3>Waktu Menuju Acara</h3>
+    <div class="container">
+        <!-- Halaman Cover -->
+        <div class="cover">
+            <h2 data-aos="zoom-in">UNDANGAN</h2>
+            <h5 data-aos="zoom-in">Special Invitation</h5>
+            <img src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
+            <h1>Milea & Dilan</h1>
+            <h4>Waktu Menuju Acara</h4>
             <div id="countdown" class="countdown"></div>
-        </h3>
-    </div>
-    <!-- Akhir Halaman Cover -->
-
-    <!-- AWAL WEDDING -->  
-    <div class="wedding box" id="wedding" data-aos="zoom-in">
-        <h1 data-aos="zoom-in">The Wedding</h1>
-        <h5 data-aos="zoom-in">You are Invited to the Wedding of</h5>
-        <div id="coupleName" data-aos="flip-up">
-            <h2>Milea</h2>
-            <h2> & </h2>
-            <h2>Dilan</h2>
         </div>
-        <div data-aos="fade-down">
+        <!-- Akhir Halaman Cover -->
+
+        <!-- AWAL WEDDING -->
+        <div class="wedding box" id="wedding" data-aos="zoom-in">
+            <h1 data-aos="zoom-in">The Wedding</h1>
+            <h5 data-aos="zoom-in">You are Invited to the Wedding of</h5>
+            <div id="coupleName" data-aos="flip-up">
+                <h2>Milea</h2>
+                <h2> & </h2>
+                <h2>Dilan</h2>
+            </div>
+            <div data-aos="fade-down">
+                <hr>
+                <h5>Save The Date</h5>
+
+                <h3>- Selasa, 22 Februari 2022 -</h3>
+                <h5>Masjid Agung Daarussalaam Purbalingga</h5>
+                <hr>
+            </div>
+            <button class="button message">
+                <a href="#maps-akadnikah"><strong>LIHAT DENAH LOKASI</strong></a>
+            </button>
+        </div>
+        <!-- AKHIR WEDDING -->
+
+        <!-- AWAL COUPLE -->
+        <div class="box couple" id="couple" data-aos="zoom-in">
+            <img src="assets/img/salam.png" alt="Basmallah" width="210px"><br>
+            <h5>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankan putra-putri
+                kami :</h5>
             <hr>
-            <h5>Save The Date</h5>
-            
-            <h3>- Selasa, 22 Februari 2022 -</h3>
-            <h5>Masjid Agung Daarussalaam Purbalingga</h5>
+            <img src="assets/img/couple/girl.png" data-aos="zoom-in" alt="Mempelai Pia" width="100px" class="mempelai">
+            <h3 data-aos="zoom-in">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span> Milea Ananta </span>
+                <i class="fa fa-heart"></i>
+            </h3>
+            <h5 data-aos="zoom-in">
+                Putri ke-4 dari Bapak Drs Widiyanto & Ibu Siti S.pd
+            </h5>
+            <img src="assets/img/couple/man.png" data-aos="zoom-in" alt="Mempelai Wanita" width="100px"
+                class="mempelai">
+            <h3 data-aos="zoom-in">
+                <i class="fa fa-heart"></i>
+                <span>Dilan Damara</span>
+                <i class="fa fa-heart"></i>
+            </h3>
+            <h5 data-aos="zoom-in">
+                Putra ke-2 Dari Bapak Drs Widiyanto & Ibu Siti S.pd
+            </h5>
             <hr>
+            <h5>Untuk Mengikuti sunah rasul-MU
+                dalam rangka membentuk keluarga yang
+                sakinah, mawaddah, warahmah.
+            </h5>
         </div>
-        <button class="button message">
-            <a href="#maps-akadnikah"><b>LIHAT DENAH LOKASI</b></a>
-        </button>
-    </div>
-    <!-- AKHIR WEDDING -->
+        <!-- AKHIR COUPLE -->
 
-    <!-- AWAL COUPLE -->
-    <div class="box couple" id="couple" data-aos="zoom-in">
-        <img src="assets/img/salam.png" alt="Basmallah" width="210px"><br>
-        <h5>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankan putra-putri kami :</h5>
-        <hr>
-        <img src="assets/img/couple/girl.png" data-aos="zoom-in" alt="Mempelai Pia" width="100px" class="mempelai">
-        <h3 data-aos="zoom-in">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-				<span> Milea Ananta </span>
-            <i class="fa fa-heart"></i>
-        </h3>
-        <h5 data-aos="zoom-in">
-            Putri ke-4 dari Bapak Drs Widiyanto & Ibu Siti S.pd
-        </h5>
-        <img src="assets/img/couple/man.png" data-aos="zoom-in" alt="Mempelai Wanita" width="100px" class="mempelai">
-        <h3 data-aos="zoom-in">
-            <i class="fa fa-heart"></i>
-            <span>Dilan Damara</span>
-            <i class="fa fa-heart"></i>
-        </h3>
-        <h5 data-aos="zoom-in">
-            Putra ke-2 Dari Bapak Drs Widiyanto & Ibu Siti S.pd
-        </h5>
-        <hr>
-        <h5>Untuk Mengikuti sunah rasul-MU
-            dalam rangka membentuk keluarga yang
-            sakinah, mawaddah, warahmah.
-        </h5>
-    </div>
-    <!-- AKHIR COUPLE -->
-
-    <!-- AWAL EVENT -->
-    <div class="box event" id="event" data-aos="zoom-in">
-        <h1>Save The Date</h1>
-        <h5><b>Assalamu'alaikum Warahmatullahi Wabarakatuh</b></h5>
-        <h5>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, Kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri Resepsi Pernikahan Kami yang akan di selenggarakan pada : </h5>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="mycard" data-aos="zoom-in">
-                        <div class="card-header pb-0">
-                            <h3>Akad Nikah<br>
-                                <img src="../tw01/assets/font/flower.png" alt="Akad Nikah" width="75px" height="auto">
-                            </h3>
+        <!-- AWAL EVENT -->
+        <div class="box event" id="event" data-aos="zoom-in">
+            <h1>Save The Date</h1>
+            <h5><strong>Assalamu'alaikum Warahmatullahi Wabarakatuh</strong></h5>
+            <h5>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, Kami mengundang Bapak/Ibu/Saudara/i, untuk
+                menghadiri Resepsi Pernikahan Kami yang akan di selenggarakan pada : </h5>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mycard" data-aos="zoom-in">
+                            <div class="card-header pb-0">
+                                <h3>Akad Nikah<br>
+                                    <img src="../tw01/assets/font/flower.png" alt="Akad Nikah" width="75px"
+                                        height="auto">
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text" style="font-weight: bold;">Selasa, 22 Februari 2022</h5>
+                                <h5 class="card-text" style="font-weight: bold;">Pukul 07:00 WIB</h5>
+                                <h5 class="card-text">Bertempat di Masjid Agung Daarussalaam Purbalingga</h5>
+                                <h5 class="card-text">Jl. Jambu Karang No.1, Purbalingga, Kec. Purbalingga, Kabupaten
+                                    Purbalingga, Jawa Tengah 53311</h5>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="button message">
+                                    <a href="#maps-akadnikah">Lihat Lokasi</a>
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-text" style="font-weight: bold;">Selasa, 22 Februari 2022</h5>
-                            <h5 class="card-text" style="font-weight: bold;">Pukul 07:00 WIB</h5>
-                            <h5 class="card-text">Bertempat di Masjid Agung Daarussalaam Purbalingga</h5>
-                            <h5 class="card-text">Jl. Jambu Karang No.1, Purbalingga, Kec. Purbalingga, Kabupaten Purbalingga, Jawa Tengah 53311</h5>
-                        </div>
-                        <div class="card-footer">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="" data-aos="zoom-in">
+                            <h3 id="maps-akadnikah">Lokasi</h3>
+                            <!-- Elemen yang akan menjadi kontainer peta -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6861919054427!2d109.35990371450465!3d-7.389018174790342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512854c8efcb3%3A0x86cac1d0cb3ba8ee!2sGreat%20Mosque%20Daarussalaam%20Purbalingga!5e0!3m2!1sen!2sid!4v1631665001832!5m2!1sen!2sid"
+                                width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"
+                                title="google maps"></iframe><br>
                             <button type="button" class="button message">
-                                <a href="#maps-akadnikah">Lihat Lokasi</a>
-                            </button> 
+                                <a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971"
+                                    target="_blank">Buka Map</a>
+                            </button>
+                            <hr>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="" data-aos="zoom-in">
-                        <h3 id="maps-akadnikah">Lokasi</h3>
-                        <!-- Elemen yang akan menjadi kontainer peta -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6861919054427!2d109.35990371450465!3d-7.389018174790342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512854c8efcb3%3A0x86cac1d0cb3ba8ee!2sGreat%20Mosque%20Daarussalaam%20Purbalingga!5e0!3m2!1sen!2sid!4v1631665001832!5m2!1sen!2sid" width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"></iframe><br>
-                        <button type="button" class="button message">
-                            <a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971" target="_blank">Buka Map</a>
-                        </button>    
-                        <hr>
+                    <div class="col-sm-6">
+                        <div class="mycard" data-aos="zoom-in">
+                            <div class="card-header pb-0">
+                                <h3>Resepsi<br>
+                                    <img src="../tw01/assets/font/flower.png" alt="Resepsi Pernikahan" width="75px"
+                                        height="auto">
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text" style="font-weight: bold;">Selasa, 22 Februari 2022</h5>
+                                <h5 class="card-text" style="font-weight: bold;">Pukul 09:00 WIB sd Selesai</h5>
+                                <h5 class="card-text">Bertempat di Masjid Agung Daarussalaam Purbalingga</h5>
+                                <h5 class="card-text">Jl. Jambu Karang No.1, Purbalingga, Kec. Purbalingga, Kabupaten
+                                    Purbalingga, Jawa Tengah 53311</h5>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="button message mr-sm-2">
+                                    <a href="#maps-resepsi">Lihat Lokasi</a>
+                                </button>
+                                <button type="button" class="button message">
+                                    <a target="_blank"
+                                        href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnZwb2VjOTBkY3MyYnI2OWtidWo5MzZyZXYgamV0dW5kYW5nYW5AbQ&amp;tmsrc=jetundangan%40gmail.com">Simpan
+                                        Acara</a>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="mycard" data-aos="zoom-in">
-                        <div class="card-header pb-0">
-                            <h3>Resepsi<br>
-                                <img src="../tw01/assets/font/flower.png" alt="Resepsi Pernikahan" width="75px" height="auto">
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-text" style="font-weight: bold;">Selasa, 22 Februari 2022</h5>
-                            <h5 class="card-text" style="font-weight: bold;">Pukul 09:00 WIB sd Selesai</h5>
-                            <h5 class="card-text">Bertempat di Masjid Agung Daarussalaam Purbalingga</h5>
-                            <h5 class="card-text">Jl. Jambu Karang No.1, Purbalingga, Kec. Purbalingga, Kabupaten Purbalingga, Jawa Tengah 53311</h5>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="button message mr-sm-2">
-                                <a href="#maps-resepsi">Lihat Lokasi</a>
-                            </button> 
+                    <div class="col-sm-6">
+                        <div class="" data-aos="zoom-in">
+                            <h3 id="maps-resepsi">Lokasi</h3>
+                            <!-- Elemen yang akan menjadi kontainer peta -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6861919054427!2d109.35990371450465!3d-7.389018174790342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512854c8efcb3%3A0x86cac1d0cb3ba8ee!2sGreat%20Mosque%20Daarussalaam%20Purbalingga!5e0!3m2!1sen!2sid!4v1631665001832!5m2!1sen!2sid"
+                                width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"
+                                title="google maps"></iframe><br>
                             <button type="button" class="button message">
-                                <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnZwb2VjOTBkY3MyYnI2OWtidWo5MzZyZXYgamV0dW5kYW5nYW5AbQ&amp;tmsrc=jetundangan%40gmail.com">Simpan Acara</a>
-                            </button> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="" data-aos="zoom-in">
-                        <h3 id="maps-resepsi">Lokasi</h3>
-                        <!-- Elemen yang akan menjadi kontainer peta -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6861919054427!2d109.35990371450465!3d-7.389018174790342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512854c8efcb3%3A0x86cac1d0cb3ba8ee!2sGreat%20Mosque%20Daarussalaam%20Purbalingga!5e0!3m2!1sen!2sid!4v1631665001832!5m2!1sen!2sid" width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"></iframe><br>
-                        <button type="button" class="button message">
-                            <a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971" target="_blank">Buka Map</a>
-                        </button>    
-                        <hr>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
-                        <div class="card-header pb-sm-0">
-                            <h3>Wedding Online<br>
-                                <img src="../tw01/assets/font/flower.png" alt="Wedding Online" width="75px" height="auto">
-                            </h3>
-                        </div>
-                        <blockquote class="blockquote">
-                            <h5>Temui kami secara virtual untuk menyaksikan acara pernikahan kami yang akan disiarkan langsung, dengan menekan tombol di bawah ini :</h5>
-                            <img src="../tw01/assets/font/zoom-logo.png" alt="Gunakan Masker Atau Faceshield" width="100px" height="auto" class="mt-sm-2 mb-2">
-                            <br>
-                            <button type="button" class="button message mb-3">
-                                <a href="#" target="_blank">Zoom Live</a>
-                            </button> 
-                        </blockquote>
-                        <div class="card-footer pb-sm-0">
-                            <h5>Meeting ID : <b>789 789 789</b></h5>
-                            <h5>Password : <b>123456</b></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col sm-6">
-                    <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
-                        <div class="card-header pb-sm-0">
-                            <h3>Protokol Kesehatan<br>
-                                <img src="../tw01/assets/font/flower.png" alt="Protokol Kesehatan" width="75px" height="auto">
-                            </h3>
-                        </div>
-                        <blockquote class="blockquote mb-0">
-                            <h5>Sehubungan dengan situasi pandemi COVID-19 saat ini,</h5>
-                            <h5>tanpa mengurangi rasa hormat kami kepada Bapak/Ibu/Saudara/i,</h5>
-                            <h5>acara pernikahan kami akan dilaksanakan dengan menerapkan standar protokol kesehatan.</h5>
+                                <a href="https://www.google.com/maps/place/Great+Mosque+Daarussalaam+Purbalingga/@-7.3890182,109.3599037,17z/data=!3m1!4b1!4m5!3m4!1s0x2e6512854c8efcb3:0x86cac1d0cb3ba8ee!8m2!3d-7.3889923!4d109.3620971"
+                                    target="_blank">Buka Map</a>
+                            </button>
                             <hr>
-                            <img src="../tw01/assets/font/prokes/mask.png" alt="Gunakan Masker Atau Faceshield" width="75px" height="auto">
-                            <h5>Gunakan Masker Atau Faceshield</h5>
-                            <img src="../tw01/assets/font/prokes/wash.png" alt="Cuci tangan menggunakan Handsanitizer" width="75px" height="auto">
-                            <h5>Cuci tangan menggunakan Handsanitizer</h5>
-                            <img src="../tw01/assets/font/prokes/social_distance.png" alt="Menjaga Jarak" width="75px" height="auto">
-                            <h5>Menjaga Jarak</h5>
-                            <hr>
-                            <h5>Terima kasih atas pengertian Bapak/Ibu/Saudara/i, semoga dengan melakukan protokol kesehatan di atas, kita semua dapat terhindar dari Covid-19.</h5>
-                        </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+                            <div class="card-header pb-sm-0">
+                                <h3>Wedding Online<br>
+                                    <img src="../tw01/assets/font/flower.png" alt="Wedding Online" width="75px"
+                                        height="auto">
+                                </h3>
+                            </div>
+                            <blockquote class="blockquote">
+                                <h5>Temui kami secara virtual untuk menyaksikan acara pernikahan kami yang akan
+                                    disiarkan langsung, dengan menekan tombol di bawah ini :</h5>
+                                <img src="../tw01/assets/font/zoom-logo.png" alt="Gunakan Masker Atau Faceshield"
+                                    width="100px" height="auto" class="mt-sm-2 mb-2">
+                                <br>
+                                <button type="button" class="button message mb-3">
+                                    <a href="#" target="_blank">Zoom Live</a>
+                                </button>
+                            </blockquote>
+                            <div class="card-footer pb-sm-0">
+                                <h5>Meeting ID : <strong>789 789 789</strong></h5>
+                                <h5>Password : <strong>123456</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col sm-6">
+                        <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+                            <div class="card-header pb-sm-0">
+                                <h3>Protokol Kesehatan<br>
+                                    <img src="../tw01/assets/font/flower.png" alt="Protokol Kesehatan" width="75px"
+                                        height="auto">
+                                </h3>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <h5>Sehubungan dengan situasi pandemi COVID-19 saat ini,</h5>
+                                <h5>tanpa mengurangi rasa hormat kami kepada Bapak/Ibu/Saudara/i,</h5>
+                                <h5>acara pernikahan kami akan dilaksanakan dengan menerapkan standar protokol
+                                    kesehatan.</h5>
+                                <hr>
+                                <img src="../tw01/assets/font/prokes/mask.png" alt="Gunakan Masker Atau Faceshield"
+                                    width="75px" height="auto">
+                                <h5>Gunakan Masker Atau Faceshield</h5>
+                                <img src="../tw01/assets/font/prokes/wash.png"
+                                    alt="Cuci tangan menggunakan Handsanitizer" width="75px" height="auto">
+                                <h5>Cuci tangan menggunakan Handsanitizer</h5>
+                                <img src="../tw01/assets/font/prokes/social_distance.png" alt="Menjaga Jarak"
+                                    width="75px" height="auto">
+                                <h5>Menjaga Jarak</h5>
+                                <hr>
+                                <h5>Terima kasih atas pengertian Bapak/Ibu/Saudara/i, semoga dengan melakukan protokol
+                                    kesehatan di atas, kita semua dapat terhindar dari Covid-19.</h5>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h5>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan
+                hadir untuk memberikan doa restu kepada kedua mempelai.</h5>
+            <h5>Atas kehadiran serta doa restu, kami ucapkan terima kasih.</h5>
+            <h5><strong>Wassalamualaikum Warahmatullahi Wabarakatuh</strong></h5>
+        </div>
+        <!-- AKHIR EVENT -->
+
+        <!-- AWAL GALERY -->
+        <div class="box galery" id="galery" data-aos="zoom-in">
+            <h1>Galery</h1>
+            <h5>~ Moment terindah Milea & Dilan ~</h5>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                        <a class="example-image-link" href="assets/img/galery/1.jpg" data-lightbox="example-set"
+                            data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                            <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image"
+                                style="size: cover;" src="assets/img/galery/1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                        <a class="example-image-link" href="assets/img/galery/2.jpg" data-lightbox="example-set"
+                            data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                            <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image"
+                                style="size: cover;" src="assets/img/galery/2.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                        <a class="example-image-link" href="./assets/img/galery/3.jpg" data-lightbox="example-set"
+                            data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                            <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image"
+                                style="size: cover;" src="./assets/img/galery/3.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                        <a class="example-image-link" href="./assets/img/galery/4.jpg" data-lightbox="example-set"
+                            data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                            <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image"
+                                style="size: cover;" src="./assets/img/galery/4.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
+                        <a class="example-image-link" href="./assets/img/galery/5.jpg" data-lightbox="example-set"
+                            data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
+                            <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image"
+                                style="size: cover;" src="./assets/img/galery/5.jpg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
-        <h5>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.</h5>
-        <h5>Atas kehadiran serta doa restu, kami ucapkan terima kasih.</h5>
-        <h5><b>Wassalamualaikum Warahmatullahi Wabarakatuh</b></h5>
-    </div>
-    <!-- AKHIR EVENT -->
+        <!-- AKHIR GALERY -->
 
-    <!-- AWAL GALERY -->
-    <div class="box galery" id="galery" data-aos="zoom-in">
-        <h1>Galery</h1>
-        <h5>~ Moment terindah Milea & Dilan ~</h5>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
-                    <a class="example-image-link" href="./assets/img/galery/1.jpg" 
-                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
-                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/1.jpg" alt=""/>
-                    </a>
+        <!-- AWAL STORY -->
+        <div class="box story" id="story" data-aos="zoom-in">
+            <h1>Kisah Kami</h1>
+            <h5>~ Kisah Bahagia Milea & Dilan ~</h5>
+            <h5>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri,
+                supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.
+                Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”</h5>
+            <h5>QS. Ar-Rum : 21</h5>
+            <div class="timeline">
+                <div class="container-story left">
+                    <div class="content" data-aos="zoom-in">
+                        <h3>First Meet</h3>
+                        <h6>We met at the wedding of our close friends and immediately found a common language, so a
+                            year later our first date happened.</h6>
+                    </div>
                 </div>
-                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
-                    <a class="example-image-link" href="./assets/img/galery/2.jpg" 
-                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
-                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/2.jpg" alt=""/>
-                    </a>
+                <div class="container-story right">
+                    <div class="content" data-aos="zoom-in">
+                        <h3>First Date</h3>
+                        <h6>We met at the wedding of our close friends and immediately found a common language, so a
+                            year later our first date happened.</h6>
+                    </div>
                 </div>
-                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
-                    <a class="example-image-link" href="./assets/img/galery/3.jpg" 
-                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
-                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/3.jpg" alt=""/>
-                    </a>
+                <div class="container-story left">
+                    <div class="content" data-aos="zoom-in">
+                        <h3>Proposal</h3>
+                        <h6>We met at the wedding of our close friends and immediately found a common language, so a
+                            year later our first date happened.</h6>
+                    </div>
                 </div>
-                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
-                    <a class="example-image-link" href="./assets/img/galery/4.jpg" 
-                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
-                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/4.jpg" alt=""/>
-                    </a>
+                <div class="container-story right">
+                    <div class="content" data-aos="zoom-in">
+                        <h3>Engagement</h3>
+                        <h6>We met at the wedding of our close friends and immediately found a common language, so a
+                            year later our first date happened.</h6>
+                    </div>
                 </div>
-                <div class="shadow-lg p-2 mb-3 bg-transparent rounded">
-                    <a class="example-image-link" href="./assets/img/galery/5.jpg" 
-                    data-lightbox="example-set" data-title="klik bagian kanan gambar untuk melihat gambar lainnya">
-                    <img class="img-fluid rounded card" data-aos="zoom-in" alt="Responsive image" style="size: cover;" src="./assets/img/galery/5.jpg" alt=""/>
-                    </a>
+                <div class="container-story left">
+                    <div class="content" data-aos="zoom-in">
+                        <h3>The Wedding</h3>
+                        <h6>We met at the wedding of our close friends and immediately found a common language, so a
+                            year later our first date happened.</h6>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- AKHIR GALERY -->
+        <!-- AKHIR STORY -->
 
-    <!-- AWAL STORY -->
-    <div class="box story" id="story" data-aos="zoom-in">
-        <h1>Kisah Kami</h1>
-        <h5>~ Kisah Bahagia Milea & Dilan ~</h5>
-        <h5>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu istri-istri dari jenismu sendiri,
-            supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.
-            Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”</h5>
-        <h5>QS. Ar-Rum : 21</h5>
-        <div class="timeline">
-            <div class="container-story left">
-                <div class="content" data-aos="zoom-in">
-                    <h3>First Meet</h3>
-                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
-                </div>
-            </div>
-            <div class="container-story right">
-                <div class="content" data-aos="zoom-in">
-                    <h3>First Date</h3>
-                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
-                </div>
-            </div>
-            <div class="container-story left">
-                <div class="content" data-aos="zoom-in">
-                    <h3>Proposal</h3>
-                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
-                </div>
-            </div>
-            <div class="container-story right">
-                <div class="content" data-aos="zoom-in">
-                    <h3>Engagement</h3>
-                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
-                </div>
-            </div>
-            <div class="container-story left">
-                <div class="content" data-aos="zoom-in">
-                    <h3>The Wedding</h3>
-                    <h6>We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- AKHIR STORY -->
-
-    <div class="box" data-aos="zoom-in">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="mycard bg-image text-center p-3" data-aos="zoom-in">
-                        <div class="card-header pb-sm-0">
-                            <h3>Love Gift<br><img src="../tw01/assets/font/flower.png" alt="Love Gift
+        <div class="box" data-aos="zoom-in">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mycard bg-image text-center p-3" data-aos="zoom-in">
+                            <div class="card-header pb-sm-0">
+                                <h3>Love Gift<br><img src="../tw01/assets/font/flower.png" alt="Love Gift
                                 " width="75px" height="auto"></h3>
-                        </div>
-                        <blockquote class="blockquote mb-0">
-                            <h5>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk kami, dapat melalui :</h5>
-                            <h5>Bank BNI</h5>
-                            <h5>No. Rekening <b id="norek">789 789 789</b></h5>
-                            <h5>a.n Dilan Damara</h5>
-                            <h4 id="tombol" onclick="copyToClipboard('#norek')">
-                                <button id="copy" class="button message">Copy nomor rekening</button>
-                            </h4>
-                        </blockquote>
-                        <div class="card-footer">
-                            <h3>Terima Kasih</h3>
+                            </div>
+                            <blockquote class="blockquote mb-0">
+                                <h5>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk
+                                    kami, dapat melalui :</h5>
+                                <h5>Bank BNI</h5>
+                                <h5>No. Rekening <strong id="norek">789 789 789</strong></h5>
+                                <h5>a.n Dilan Damara</h5>
+                                <h4 id="tombol" onclick="copyToClipboard('#norek')">
+                                    <button id="copy" class="button message">Copy nomor rekening</button>
+                                </h4>
+                            </blockquote>
+                            <div class="card-footer">
+                                <h3>Terima Kasih</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
-                        <div class="card-header pb-sm-0">
-                            <h3>Konfirmasi Kehadiran<br><img src="../tw01/assets/font/flower.png" alt="Konfirmasi kehadiran" width="75px" height="auto"></h3>
-                        </div>
-                        <div class="card-body">
-                            <h5>Tekan tombol dibawah ini dan pastikan kehadiranmu untuk</h5><br>
-                            <h3>milea & Dilan</h3>
-                            <button class="button message mb-4"><a href="https://wa.me/6282217283099?text=Halo Milea dan Dilan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Milea dan Dilan pada Hari Selasa, 22 Februari 2022">Konfirmasi Kehadiran untuk mempelai laki-laki</a></button>
-                            <button class="button message"><a href="https://wa.me/6282217283099?text=Halo Milea dan Dilan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Milea dan Dilan pada Hari Selasa, 22 Februari 2022">Konfirmasi Kehadiran untuk mempelai perempuan</a></button>
+                    <div class="col-sm-6">
+                        <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+                            <div class="card-header pb-sm-0">
+                                <h3>Konfirmasi Kehadiran<br><img src="../tw01/assets/font/flower.png"
+                                        alt="Konfirmasi kehadiran" width="75px" height="auto"></h3>
+                            </div>
+                            <div class="card-body">
+                                <h5>Tekan tombol dibawah ini dan pastikan kehadiranmu untuk</h5><br>
+                                <h3>milea & Dilan</h3>
+                                <button class="button message mb-4"><a
+                                        href="https://wa.me/6282217283099?text=Halo Milea dan Dilan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Milea dan Dilan pada Hari Selasa, 22 Februari 2022">Konfirmasi
+                                        Kehadiran untuk mempelai laki-laki</a></button>
+                                <button class="button message"><a
+                                        href="https://wa.me/6282217283099?text=Halo Milea dan Dilan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan Milea dan Dilan pada Hari Selasa, 22 Februari 2022">Konfirmasi
+                                        Kehadiran untuk mempelai perempuan</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal Sampul -->
-  <div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header d-block">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-            <div class="container-fluid">
-                <div class="row">
-                    <h2 class="modal-title m-auto" id="exampleModalLabel">Undangan</h2>
+    <!-- Modal Sampul -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
                 </div>
-                <p>Special Invitation</p>
-                <div class="row">
-                    <img class="m-auto" src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
+                <div class="modal-body text-center">
+                    <div class="container-fluid">
+                        <div class="modal-cover">
+                            <h2 data-aos="zoom-in">UNDANGAN</h2>
+                            <h5 data-aos="zoom-in">Special Invitation</h5>
+                            <img src="assets/img/img-cover.png" alt="" width="300" data-aos="zoom-in" class="m-3">
+                            <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
+                            <h3 class="nama-tamu" data-aos="zoom-in">
+                                <script type='text/JavaScript'>
+                            //ambil URL
+                            var url = window.location.toString();
+                            //ambil bagian parameternya
+                            url.match(/\?to=(.+)$/);
+                            var params = RegExp.$1;
+                            // pisahkan parameter URL ke associative array
+                            var params = params.split("+");
+                            var queryStringList = {};
+                            for(var i=0;i<params.length;i++)
+                            {   var tmp = params[i].split("=");
+                                queryStringList[tmp[0]] = unescape(tmp[1]);
+                            }
+                            // tampilkan isi associative array
+                            for(var i in queryStringList)
+                            {   var res = queryStringList[i].replace(/[+]/g, " ");
+                                document.write(i+" ");
+                            }
+                        </script>
+                            </h3>
+                            <h3><a href="/">
+                                    <p class="button message text-white" data-dismiss="modal">Buka Undangan</p>
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="button message" data-dismiss="modal">Buka Undangan</button>
+                <div class="modal-footer d-block text-center">
+                    <p>Design with Love by : <a href="https://www.jetundangan.com/"><strong>JetUndangan.com</strong></a>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="modal-footer d-block text-center">
-            <p>Design with Love by : <a href="https://www.jetundangan.com/"><strong>JetUndangan.com</strong></a></p>
-        </div>
-      </div>
     </div>
-  </div>
-<!-- Akhir Modal Sampul -->
+    <!-- Akhir Modal Sampul -->
 
-<!-- AWAL FOOTER -->
-<div class="footer">
-<footer>
-    <p>Design with Love by <img src="assets/font/icons/ms-icon-70x70.png" alt=""><a href=""><strong>JetUndangan.com</strong></a></p>
-</footer>
-</div>
-<!-- AKHIR FOOTER -->
-<script src="assets/script/jquery-3.5.1.js"></script>
-<script src="assets/script/script.js"></script>
-<script src="assets/script/sampul.js"></script>
-<script src="assets/script/nav.js"></script>
-<script src="assets/script/aos.js"></script>
-<script src="assets/script/bootstrap.min.js"></script>
-<script src="assets/script/lightbox.js"></script>
-<script>
-    AOS.init({
-        duration: 2000,
-    })
-    $('.modal').modal('show');  
-</script>
+    <!-- AWAL FOOTER -->
+    <div class="footer">
+        <footer>
+            <p>Design with Love by <img src="assets/font/icons/ms-icon-70x70.png" alt=""><a
+                    href=""><strong>JetUndangan.com</strong></a></p>
+        </footer>
+    </div>
+    <!-- AKHIR FOOTER -->
+    <script src="assets/script/jquery-3.5.1.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/sampul.js"></script>
+    <script src="assets/script/nav.js"></script>
+    <script src="assets/script/aos.js"></script>
+    <script src="assets/script/bootstrap.min.js"></script>
+    <script src="assets/script/lightbox.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        })
+        $('.modal').modal('show');  
+    </script>
 </body>
+
 </html>

@@ -15,10 +15,9 @@
 }
 .modal .modal-body {
   overflow-y: auto;
+  display: flex !important;
+  align-items: center;
 }
-.modal-header .close {
-  display: none;
-}
-.modal p {
+.modal-footer p {
   font-size: 10px;
 }

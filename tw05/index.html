@@ -10,18 +10,8 @@
     <meta name="author" content="Undangan Digital">
     <!-- Site Icon -->
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <!-- CSS Reset MeyerWeb -->
-    <link rel="stylesheet" href="assets/styles/reset.css">
-    <!-- animation on scroll CSS -->
-    <link rel="stylesheet" href="assets/styles/aos.css">
-    <!-- Bootsrap -->
-    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <!-- Mine CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/sampul.css">
-    <link rel="stylesheet" href="assets/styles/nav.css">
-    <!-- LightBox Galery -->
-    <link rel="stylesheet" href="assets/styles/lightbox.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -71,25 +61,14 @@
     <!-- Akhir Navigasi -->
 
     <div class="container">
-        <!-- Halaman Cover -->
-        <div class="cover">
-            <h2 data-aos="zoom-in">UNDANGAN</h2>
-            <h5 data-aos="zoom-in">Special Invitation</h5>
-            <img src="assets/img/img-cover.png" alt="" width="180" data-aos="zoom-in">
-            <h1>Milea & Dilan</h1>
-            <h4>Waktu Menuju Acara</h4>
-            <div id="countdown" class="countdown"></div>
-        </div>
-        <!-- Akhir Halaman Cover -->
-
         <!-- AWAL WEDDING -->
         <div class="wedding box" id="wedding" data-aos="zoom-in">
             <h1 data-aos="zoom-in">The Wedding</h1>
             <h5 data-aos="zoom-in">You are Invited to the Wedding of</h5>
             <div id="coupleName" data-aos="flip-up">
-                <h2>Milea</h2>
+                <h2>Devi</h2>
                 <h2> & </h2>
-                <h2>Dilan</h2>
+                <h2>Hasan</h2>
             </div>
             <div data-aos="fade-down">
                 <hr>
@@ -98,9 +77,13 @@
                 <h3>- Selasa, 22 Februari 2022 -</h3>
                 <h5>Masjid Agung Daarussalaam Purbalingga</h5>
                 <hr>
+                <h4>Waktu Menuju Acara</h4>
+                <div id="countdown" class="countdown"></div>
             </div>
-            <button class="button message">
-                <a href="#maps-akadnikah"><strong>LIHAT DENAH LOKASI</strong></a>
+            <button type="button" class="button message">
+                <a target="_blank"
+                    href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnZwb2VjOTBkY3MyYnI2OWtidWo5MzZyZXYgamV0dW5kYW5nYW5AbQ&amp;tmsrc=jetundangan%40gmail.com">Simpan
+                    Acara</a>
             </button>
         </div>
         <!-- AKHIR WEDDING -->
@@ -434,14 +417,12 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                </div>
                 <div class="modal-body text-center">
                     <div class="container-fluid">
                         <div class="modal-cover">
                             <h2 data-aos="zoom-in">UNDANGAN</h2>
                             <h5 data-aos="zoom-in">Special Invitation</h5>
-                            <img src="assets/img/img-cover.png" alt="" width="300" data-aos="zoom-in" class="m-3">
+                            <img src="assets/img/img-cover.png" alt="" width="300" data-aos="zoom-in" class="img-fluid">
                             <h5>Kepada Yth. <br>Bapak/Ibu/Saudara/i</h5>
                             <h3 class="nama-tamu" data-aos="zoom-in">
                                 <script type='text/JavaScript'>
@@ -464,7 +445,7 @@
                             }
                         </script>
                             </h3>
-                            <h3><a href="/">
+                            <h3><a href="#wedding">
                                     <p class="button message text-white" data-dismiss="modal">Buka Undangan</p>
                                 </a>
                             </h3>

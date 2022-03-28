@@ -9,19 +9,23 @@
 /*------------------------------------------------------------------
     IMPORT CSS
 -------------------------------------------------------------------*/
-@import url(animate.css);
+@import url(reset.css);
+@import url(aos.css);
+@import url(sampul.css);
+@import url(nav.css);
 @import url(font-awesome.min.css);
 @import url(magnific-popup.css);
 @import url(responsiveslides.css);
 @import url(timeline.css);
 @import url(flaticon.css);
+@import url(lightbox.css);
+@import url(bootstrap.min.css);
 
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(https://example.com/MaterialIcons-Regular.eot);
-  /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"),
     url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
     url(https://example.com/MaterialIcons-Regular.woff) format("woff"),

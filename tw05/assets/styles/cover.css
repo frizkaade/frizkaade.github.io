@@ -1,0 +1,45 @@
+.modal {
+  padding: 0 !important;
+}
+.modal .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+.modal .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--color-white);
+}
+.modal .modal-body {
+  overflow-y: auto;
+  display: flex !important;
+  align-items: center;
+}
+.modal .button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6em;
+  display: inline-block;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.modal .message {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  box-shadow: 0 0 1rem var(--color-shadow);
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.modal .modal-cover .couple-name {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 4px;
+  padding: 1.5rem 2rem;
+}

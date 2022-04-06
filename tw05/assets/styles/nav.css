@@ -39,7 +39,7 @@
 
 .tab-menu__active {
   color: var(--color-primary);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   background-color: var(--color-secondary);
 }
 

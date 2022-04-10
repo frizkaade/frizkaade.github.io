@@ -3,9 +3,9 @@
 -------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 
 /*------------------------------------------------------------------
     IMPORT CSS
@@ -15,7 +15,6 @@
 @import url(cover.css);
 @import url(nav.css);
 @import url(font-awesome.min.css);
-@import url(magnific-popup.css);
 @import url(responsiveslides.css);
 @import url(timeline.css);
 @import url(flaticon.css);
@@ -35,15 +34,15 @@ AWAL CSS FOR ALL
   --color-primary-light: #c4c4c4;
   --color-secondary: #e8e9ee;
   --color-shadow: #e8e9ee;
-  --color-white: #ffffff;
+  --color-white: #eaeaea;
 }
 
 body {
   color: var(--color-primary);
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
 }
 
 a {
@@ -122,7 +121,7 @@ a {
 }
 
 a,
-.btn {
+.button {
   text-decoration: none !important;
   outline: none !important;
   -webkit-transition: all 0.3s ease-in-out;
@@ -172,11 +171,9 @@ h3 {
 /*-----------------------------------------------------
 AKHIR CSS FOR ALL
 -------------------------------------------------------*/
-
-
 .button {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.6em;
+  font-size: 0.7em;
   display: inline-block;
   border-radius: 2em;
   text-align: center;
@@ -187,6 +184,8 @@ AKHIR CSS FOR ALL
   background-color: var(--color-primary);
   cursor: pointer;
   box-shadow: 0 0 1rem var(--color-shadow);
+  color: var(--color-secondary);
+
 }
 
 .message:active {
@@ -198,26 +197,40 @@ AKHIR CSS FOR ALL
 .countdown {
   box-shadow: 0 0 30px var(--color-primary), inset 0 0 10px var(--color-text-white);
   padding: 10px;
-  border-radius: 20px;
+  margin: 20px;
+  border-radius: 50px;
   background-color: var(--color-primary-light);
   color: var(--color-primary);
 }
+.count {
+  background-color: #a37949;
+  color: var(--color-secondary);
+  text-align: center;
+  padding: 50px 10px;
+}
+
 
 
 /*-----------------------------------------------------
 AWAL CSS ALL
 -------------------------------------------------------*/
 .box {
+  background-image: url(../img/ptn-bg2.png);
   text-align: center;
-  padding: 1rem;
   width: 100%;
-  margin: 1rem auto;
-  outline: none;
-  border-radius: 1rem;
-  box-shadow: inset 1px 1px 15px #b0a9a0;
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  text-shadow: 0 0 1px var(--color-shadow);
+  min-height: 100%;
+  max-width: none;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.acc {
+  background-image: url(../img/ptn-bg2.png);
+  width: 100%;
+  min-height: auto;
+  max-width: none;
+  padding-top: 0px;
 }
 
 /*-----------------------------------------------------
@@ -228,18 +241,20 @@ AKHIR CSS ALL
 AWAL WEDDING
 -------------------------------------------------------*/
 .wedding {
+  background-image: url(../img/ptn-bg2.png);
   text-align: center;
   width: 100%;
+  min-height: 100%;
   max-width: none;
-  height: 100%;
   padding-top: 50px;
+  padding-bottom: 0;
 }
 .wedding h2 {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
   padding: 1.5rem 2rem;
+  font-weight: 700;
 }
-
 .coupleName {
   background: url(../img/frame-6543169.png);
   background-position: center;
@@ -256,13 +271,12 @@ AKHIR WEDDING
 /*-----------------------------------------------------
 AWAL COUPLE
 -------------------------------------------------------*/
-
-.couple .mempelai {
-  box-shadow: 5px 5px 15px #b0a9a0;
-  border-radius: 100%;
-  margin-bottom: 0.5rem;
+.couple h2 {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 4px;
+  padding: 1.5rem 2rem;
+  font-weight: 700;
 }
-
 /*-----------------------------------------------------
 AKHIR COUPLE
 -------------------------------------------------------*/
@@ -271,11 +285,9 @@ AWAL EVENT
 -------------------------------------------------------*/
 .mycard {
   background: inherit;
-  /* background-image: url(../img/ptn-bg1-.jpg); */
   background-color: var(--color-secondary);
   background-size: cover;
   position: relative;
-  /* box-shadow: inset 1px 1px 7px var(--color-shadow); */
   margin: 1rem auto;
   border-radius: 1rem;
 }

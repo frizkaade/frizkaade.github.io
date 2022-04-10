@@ -11,28 +11,13 @@
   height: 100%;
   border: 0;
   border-radius: 0;
-  background-color: var(--color-white);
+  background-image: url(../img/ptn-bg2.png);
 }
 .modal .modal-body {
   overflow-y: auto;
   display: flex !important;
   align-items: center;
 }
-.modal .button {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.6em;
-  display: inline-block;
-  border-radius: 2em;
-  text-align: center;
-}
-
-.modal .message {
-  padding: 0.5rem 1rem;
-  background-color: var(--color-primary);
-  cursor: pointer;
-  box-shadow: 0 0 1rem var(--color-shadow);
-}
-
 .message:active {
   position: relative;
   top: 7px;
@@ -41,5 +26,84 @@
 .modal .modal-cover .couple-name {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
+  font-weight: 700;
   padding: 1.5rem 2rem;
+}
+.modal h1 {
+  font-size: 32px;
+  padding-bottom: 0;
+  letter-spacing: 3px;
+}
+
+.modal .button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--color-primary-light);
+  background: var(--color-primary);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.modal .button::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.modal .button:hover, .modal .button:focus {
+  color:  var(--color-primary);
+  transform: translateY(-6px);
+}
+
+.modal .button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.modal .button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.modal p:hover::after, .modal p:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }

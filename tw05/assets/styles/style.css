@@ -35,14 +35,22 @@ AWAL CSS FOR ALL
   --color-secondary: #e8e9ee;
   --color-shadow: #e8e9ee;
   --color-white: #eaeaea;
+  --color-theme: #a37949;
 }
 
 body {
+  position: relative;
   color: var(--color-primary);
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
+  min-height: 100vh; 
+  background-image: url(../img/bg-ky.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -181,7 +189,7 @@ AKHIR CSS FOR ALL
 
 .message {
   padding: 0.5rem 1rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-theme);
   cursor: pointer;
   box-shadow: 0 0 1rem var(--color-shadow);
   color: var(--color-secondary);
@@ -203,7 +211,9 @@ AKHIR CSS FOR ALL
   color: var(--color-primary);
 }
 .count {
-  background-color: #a37949;
+  /* background-color: var(--color-theme); */
+  background-image: url(../img/bg-count1.svg);
+  border-radius: 0 150px;
   color: var(--color-secondary);
   text-align: center;
   padding: 50px 10px;
@@ -215,7 +225,6 @@ AKHIR CSS FOR ALL
 AWAL CSS ALL
 -------------------------------------------------------*/
 .box {
-  background-image: url(../img/ptn-bg2.png);
   text-align: center;
   width: 100%;
   min-height: 100%;
@@ -226,7 +235,7 @@ AWAL CSS ALL
   padding-right: 10px;
 }
 .acc {
-  background-image: url(../img/ptn-bg2.png);
+  background: transparent;
   width: 100%;
   min-height: auto;
   max-width: none;
@@ -241,7 +250,6 @@ AKHIR CSS ALL
 AWAL WEDDING
 -------------------------------------------------------*/
 .wedding {
-  background-image: url(../img/ptn-bg2.png);
   text-align: center;
   width: 100%;
   min-height: 100%;
@@ -271,7 +279,7 @@ AKHIR WEDDING
 /*-----------------------------------------------------
 AWAL COUPLE
 -------------------------------------------------------*/
-.couple h2 {
+.couple h2, .couple h1  {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
   padding: 1.5rem 2rem;
@@ -314,8 +322,12 @@ AKHIR STORY
 /*-----------------------------------------------------
 AWAL FOOTER
 -------------------------------------------------------*/
-.modal-footer p, footer p {
+footer {
+  align-items: center;
+}
+footer p {
   font-size: 10px;
+
 }
 
 .quote {
@@ -328,6 +340,9 @@ AWAL FOOTER
 
 footer {
   height: 90px;
+  background-color: #a37949;
+  color: var(--color-secondary);
+
 }
 
 /*-----------------------------------------------------

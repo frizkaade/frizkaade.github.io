@@ -7,12 +7,10 @@ window.onload = () =>{
     menuItems.forEach(item => {
     
         item.addEventListener('click', () => {
-    
             previousSelectedItem.classList.remove('tab-menu__active')
             previousSelectedItem = item;
             item.classList.add('tab-menu__active')
-    
         })
     
     })
-    }
+}

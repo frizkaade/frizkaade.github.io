@@ -11,12 +11,16 @@
   height: 100%;
   border: 0;
   border-radius: 0;
-  background-image: url(../img/ptn-bg2.png);
+  background-image: url(../img/cover-bg.png);
+  background-size: cover;
 }
 .modal .modal-body {
   overflow-y: auto;
   display: flex !important;
   align-items: center;
+}
+.modal .footer p {
+  font-size: 10px;
 }
 .message:active {
   position: relative;
@@ -42,7 +46,7 @@
   letter-spacing: 1px;
   font-weight: 500;
   color: var(--color-primary-light);
-  background: var(--color-primary);
+  background: var(--color-theme);
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
@@ -58,8 +62,8 @@
   border-radius: 1000px;
   min-width: calc(300px + 12px);
   min-height: calc(60px + 12px);
-  border: 6px solid #00FFCB;
-  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  border: 6px solid var(--color-theme);
+  box-shadow: 0 0 60px var(--color-primary-light);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,7 +73,7 @@
 }
 
 .modal .button:hover, .modal .button:focus {
-  color:  var(--color-primary);
+  color:  var(--color-theme);
   transform: translateY(-6px);
 }
 
@@ -81,7 +85,7 @@
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
-  border: 6px solid #00FFCB;
+  border: 6px solid var(--color-theme);
   position: absolute;
   z-index: -1;
   top: 50%;

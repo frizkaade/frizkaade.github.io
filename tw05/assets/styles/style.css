@@ -45,7 +45,8 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh; 
-  background-image: url(../img/bg-ky.jpg);
+  /* background-image: url(../img/bg-ky.jpg); */
+  background-image: url(../img/bg-ky.webp);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;

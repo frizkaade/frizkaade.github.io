@@ -55,8 +55,9 @@ var distance = countDownDate - now;
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = days + " Hari " + hours + " Jam "
-  + minutes + " Menit " + seconds + " Detik ";
+  // document.getElementById("countdown").innerHTML = days + " Hari " + hours + " Jam "
+  // + minutes + " Menit " + seconds + " Detik";
+  document.getElementById("countdown").innerHTML = "<div class='cd'><h1 class='countdate'>" + days + "</h1><br><p>Hari</p></div>" + "<div class='cd'><h1>" + hours + "</h1><br><p>Jam</p></div>" + "<div class='cd'><h1>" + minutes + "</h1><br><p>Menit</p></div>" + "<div class='cd'><h1>" + seconds + "</h1><br><p>Detik</p></div>";
     
   // If the count down is over, write some text 
 if (distance < 0) {

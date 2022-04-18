@@ -33,7 +33,6 @@ AWAL CSS FOR ALL
   --color-primary: #060606;
   --color-primary-light: #c4c4c4;
   --color-secondary: #e8e9ee;
-  --color-shadow: #e8e9ee;
   --color-white: #eaeaea;
   --color-theme: #a37949;
 }
@@ -191,7 +190,7 @@ AKHIR CSS FOR ALL
   padding: 0.5rem 1rem;
   background-color: var(--color-theme);
   cursor: pointer;
-  box-shadow: inset 0.2rem 0.2rem 0.2rem var(--color-primary-light);
+  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-primary-light);
   color: var(--color-secondary);
 
 }
@@ -201,26 +200,39 @@ AKHIR CSS FOR ALL
   top: 7px;
   box-shadow: none;
 }
-
-.countdown {
-  /* box-shadow: 0 0 30px var(--color-primary), inset 0 0 10px var(--color-text-white); */
-  box-shadow: inset 0.1rem 0.1rem 0.1rem var(--color-theme);
-  padding: 10px;
-  margin: 20px;
-  border-radius: 50px;
-  background-color: var(--color-primary-light);
-  color: var(--color-primary);
-}
 .count {
-  box-shadow: inset 0.1rem 0.1rem 0.1rem var(--color-primary-light);
+  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  /* text-shadow: 0 0 1px var(--color-shadow); */
-
-  border-radius: 150px 0;
-  color: var(--color-secondary);
+  border-radius: 4rem 0;
   text-align: center;
-  padding: 50px 10px;
+  padding: 2rem 2rem;
+}
+.count-header {
+  font-family: 'Mr Dafoe', cursive;
+}
+.countdown {
+  margin: 0;
+  padding: 1rem 0;
+}
+.countdown .cd {
+  width: 4rem;
+  margin: 0.2rem auto;
+  padding: 0.5rem;
+  border: 5px solid var(--color-theme);
+  border-radius: 1rem;
+}
+.countdown h1 {
+ padding-bottom: 0;
+ margin-bottom: 0;
+}
+.countdown p {
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 10px;
+}
+.count-body {
+  font-family: 'Great Vibes', cursive;
 }
 
 
@@ -239,6 +251,7 @@ AWAL CSS ALL
   padding-right: 10px;
 }
 .acc {
+  text-align: center;
   background: transparent;
   width: 100%;
   min-height: auto;
@@ -261,19 +274,11 @@ AWAL WEDDING
   padding-top: 50px;
   padding-bottom: 0;
 }
-.wedding h2 {
+.wedding .couple-name {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
   padding: 1.5rem 2rem;
   font-weight: 700;
-}
-.coupleName {
-  background: url(../img/frame-6543169.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 11em;
-  padding: 1.5em;
-  text-shadow: 0 0 1px var(--color-shadow);
 }
 
 /*-----------------------------------------------------
@@ -283,11 +288,22 @@ AKHIR WEDDING
 /*-----------------------------------------------------
 AWAL COUPLE
 -------------------------------------------------------*/
+.couple {
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  max-width: none;
+  padding-top: 0px;
+  padding-bottom: 0;
+}
 .couple h2, .couple h1  {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
   padding: 1.5rem 2rem;
   font-weight: 700;
+}
+.couple .weare {
+  font-family: 'Mr Dafoe', cursive;
 }
 /*-----------------------------------------------------
 AKHIR COUPLE
@@ -295,14 +311,22 @@ AKHIR COUPLE
 /*-----------------------------------------------------
 AWAL EVENT
 -------------------------------------------------------*/
-.mycard {
+.event .mycard {
   background: inherit;
-  background-color: var(--color-secondary);
+  background-image: url(../img/box.webp);
   background-size: cover;
   position: relative;
   margin: 1rem auto;
   border-radius: 1rem;
 }
+.event .walimatul {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  
+}
+
 
 /*-----------------------------------------------------
 AKHIR EVENT

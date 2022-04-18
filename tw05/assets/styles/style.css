@@ -16,9 +16,7 @@
 @import url(cover.css);
 @import url(nav.css);
 @import url(font-awesome.min.css);
-@import url(responsiveslides.css);
 @import url(flaticon.css);
-@import url(lightbox.css);
 @import url(bootstrap.min.css);
 /*-----------------------------------------------------
 AWAL CSS FOR ALL
@@ -200,13 +198,57 @@ AKHIR CSS FOR ALL
   top: 7px;
   box-shadow: none;
 }
+/*-----------------------------------------------------
+AWAL CSS ALL
+-------------------------------------------------------*/
+.box {
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  max-width: none;
+  padding: 0 1.5rem;
+}
+.acc {
+  text-align: center;
+  background: transparent;
+  width: 100%;
+  min-height: auto;
+  max-width: none;
+  padding-top: 0px;
+}
+/*-----------------------------------------------------
+AKHIR CSS ALL
+-------------------------------------------------------*/
+
+/*-----------------------------------------------------
+AWAL WEDDING
+-------------------------------------------------------*/
+.wedding {
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+  max-width: none;
+  padding-top: 2rem;
+}
+.wedding .couple-name {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 0.5rem;
+  padding: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+/*-----------------------------------------------------
+AKHIR WEDDING
+-------------------------------------------------------*/
+/*-----------------------------------------------------
+AWAL COUNTDOWN TIMER
+-------------------------------------------------------*/
 .count {
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
+  box-shadow: inset 0.2rem 0.2rem 0.2rem 0rem var(--color-theme);
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  border-radius: 4rem 0;
+  border-radius: 6rem 0;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem 0.1rem 2rem;
 }
 .count-header {
   font-family: 'Mr Dafoe', cursive;
@@ -234,57 +276,9 @@ AKHIR CSS FOR ALL
 .count-body {
   font-family: 'Great Vibes', cursive;
 }
-
-
-
 /*-----------------------------------------------------
-AWAL CSS ALL
+AKHIR COUNTDOWN TIMER
 -------------------------------------------------------*/
-.box {
-  text-align: center;
-  width: 100%;
-  min-height: 100%;
-  max-width: none;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.acc {
-  text-align: center;
-  background: transparent;
-  width: 100%;
-  min-height: auto;
-  max-width: none;
-  padding-top: 0px;
-}
-
-/*-----------------------------------------------------
-AKHIR CSS ALL
--------------------------------------------------------*/
-
-/*-----------------------------------------------------
-AWAL WEDDING
--------------------------------------------------------*/
-.wedding {
-  text-align: center;
-  width: 100%;
-  min-height: 100%;
-  max-width: none;
-  padding-top: 50px;
-  padding-bottom: 0;
-}
-.wedding .couple-name {
-  font-family: 'Great Vibes', cursive;
-  letter-spacing: 4px;
-  padding: 1.5rem 2rem;
-  font-weight: 700;
-}
-
-/*-----------------------------------------------------
-AKHIR WEDDING
--------------------------------------------------------*/
-
 /*-----------------------------------------------------
 AWAL COUPLE
 -------------------------------------------------------*/
@@ -293,14 +287,18 @@ AWAL COUPLE
   width: 100%;
   min-height: 100%;
   max-width: none;
-  padding-top: 0px;
-  padding-bottom: 0;
+  padding: 1rem 2rem 0.1rem 2rem;
+  /* shadow */
+  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 0 6rem;
 }
-.couple h2, .couple h1  {
+.couple h2 {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
   padding: 1.5rem 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .couple .weare {
   font-family: 'Mr Dafoe', cursive;
@@ -311,6 +309,18 @@ AKHIR COUPLE
 /*-----------------------------------------------------
 AWAL EVENT
 -------------------------------------------------------*/
+.event {
+  text-align: center;
+  padding: 1rem 2rem 0.1rem 2rem;
+  /* shadow */
+  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 6rem 0;
+}
+.event h1 {
+  font-family: 'Mr Dafoe', cursive;
+}
 .event .mycard {
   background: inherit;
   background-image: url(../img/box.webp);
@@ -326,17 +336,26 @@ AWAL EVENT
   letter-spacing: 0.5rem;
   
 }
-
-
 /*-----------------------------------------------------
 AKHIR EVENT
 -------------------------------------------------------*/
 /*-----------------------------------------------------
-AWAL GALERY
+AWAL LOKASI ACARA
 -------------------------------------------------------*/
-
+.lokasi {
+  text-align: center;
+  padding: 1rem 2rem 0.1rem 2rem;
+  /* shadow */
+  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 0 6rem;
+}
+.lokasi h1 {
+  font-family: 'Mr Dafoe', cursive;
+}
 /*-----------------------------------------------------
-AKHIR GALERY
+AKHIR LOKASI ACARA
 -------------------------------------------------------*/
 /*-----------------------------------------------------
 AWAL GALERY

@@ -47,7 +47,7 @@
 .mymodal h1 {
   font-size: 42px;
   padding-bottom: 0;
-  letter-spacing: 3px;
+  letter-spacing: 0.5rem;
 }
 .mymodal .couple-name {
   font-family: 'Great Vibes', cursive;

@@ -49,15 +49,15 @@
   text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .modalCover .cn {
-  font-family: 'Berkshire Swash', cursive;
-  letter-spacing: 0.40rem;
-  background:linear-gradient(90deg,var(--color-redDark), var(--color-redLight), var(--color-tua),var(--color-muda));
+  font-family: 'Great Vibes', cursive;
+  font-size:36px;
+  letter-spacing: 4px;
+  background:linear-gradient(90deg,var(--color-redDark), var(--color-yellow), var(--color-muda),var(--color-tua));
   transition-property:background;
   background-size:400%;
   background-clip:text;
   -webkit-background-clip:text;
   color:transparent;
-  font-size:26px;
   transition:0.9s;
   font-weight: 600;
 }

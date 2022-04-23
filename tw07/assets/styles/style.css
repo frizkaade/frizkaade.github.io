@@ -217,8 +217,8 @@ AWAL CSS ALL
   min-height: 100%;
   max-width: none;
   padding: 0 1.5rem;
-  border: var(--color-white) solid 0.10rem;
-  backdrop-filter: blur(2rem);
+  border: var(--color-muda) solid 0.10rem;
+  backdrop-filter: blur(2rem);;
   border-radius: 2rem;
 }
 .acc {
@@ -227,7 +227,6 @@ AWAL CSS ALL
   width: 100%;
   min-height: auto;
   max-width: none;
-  padding-top: 0px;
 }
 /*-----------------------------------------------------
 AKHIR CSS ALL
@@ -242,21 +241,21 @@ AWAL WEDDING
   min-height: 100%;
   max-width: none;
   padding-top: 3.8rem;
-  background-image: url(../img/accTop.png);
+  background-image: url(../img/accTop.webp);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
 }
 .wedding .coupleName {
-  font-family: 'Berkshire Swash', cursive;
-  letter-spacing: 0.40rem;
-  background:linear-gradient(90deg,var(--color-redDark), var(--color-redLight), var(--color-white),var(--color-muda));
+  font-family: 'Great Vibes', cursive;
+  font-size:36px;
+  letter-spacing: 0.5rem;
+  background:linear-gradient(90deg,var(--color-redDark), var(--color-yellow), var(--color-muda),var(--color-tua));
   transition-property:background;
   background-size:400%;
   background-clip:text;
   -webkit-background-clip:text;
   color:transparent;
-  font-size:26px;
   transition:0.9s;
   font-weight: 600;
 }
@@ -287,14 +286,14 @@ AWAL COUNTDOWN TIMER
 .count {
   border-radius: 2rem;
   text-align: center;
-  padding: 1rem 2rem 0.1rem 2rem;
   background-color: var(--color-redDark);
 }
 .count-header {
+  padding-top: 2.5rem;
   font-family: 'Mr Dafoe', cursive;
   font-size: 30px;
   font-weight: 550;
-  background: -webkit-linear-gradient(var(--color-yellow), var(--color-brown));
+  background: -webkit-linear-gradient(var(--color-muda), var(--color-tua));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -306,7 +305,7 @@ AWAL COUNTDOWN TIMER
   width: 3.5rem;
   margin: 0.2rem auto;
   padding: 0.5rem;
-  border: 0.1rem solid var(--color-yellow);
+  border: 0.1rem solid var(--color-muda);
   border-radius: 1rem;
   background-color: var(--color-redDark);
 }
@@ -325,7 +324,7 @@ AWAL COUNTDOWN TIMER
 }
 .count-body {
   font-family: 'Great Vibes', cursive;
-  font-size: 12px;
+  font-size: 18px;
   color: var(--color-muda);
   text-shadow: 2px 2px 2px var(--color-redDark);
 }
@@ -346,12 +345,19 @@ AWAL COUPLE
 }
 .couple .weare {
   font-family: 'Mr Dafoe', cursive;
-  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-muda);
 }
-.couple h2 {
+#couple .nameOfMemp {
   font-family: 'Great Vibes', cursive;
-  letter-spacing: 4px;
-  padding: 1.5rem 2rem;
+  font-size:25px;
+  letter-spacing: 0.5rem;
+  background:linear-gradient(90deg,var(--color-redDark), var(--color-yellow), var(--color-muda),var(--color-tua));
+  transition-property:background;
+  background-size:400%;
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  transition:0.9s;
   font-weight: 600;
 }
 /*-----------------------------------------------------
@@ -367,7 +373,7 @@ AWAL EVENT
   background-image: url(../img/accTop.webp), url(../img/accBottom.webp);
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
-  background-size: contain;
+  background-size: contain, contain;
 }
 .event h1 {
   font-family: 'Mr Dafoe', cursive;
@@ -375,7 +381,7 @@ AWAL EVENT
 }
 .event .mycard {
   margin: 0.5rem auto;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   background-color: var(--color-muda);
   border-radius: 1.5rem;
   background-image: url(../img/accTopRight.png), url(../img/accTopLeft.png), url(../img/accBottomLeft.png), url(../img/accBottomRight.png);

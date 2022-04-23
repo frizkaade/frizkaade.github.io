@@ -218,8 +218,8 @@ AWAL CSS ALL
   max-width: none;
   padding: 0 1.5rem;
   border: var(--color-white) solid 0.10rem;
-  backdrop-filter: blur(1rem);
-  border-radius: 0 6rem;
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
 }
 .acc {
   text-align: center;
@@ -314,7 +314,6 @@ AWAL COUNTDOWN TIMER
  background: -webkit-linear-gradient(var(--color-brown), var(--color-redDark));
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
- text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .countdown p {
   padding-top: 0;
@@ -333,6 +332,7 @@ AWAL COUPLE
 -------------------------------------------------------*/
 .couple {
   text-align: center;
+  margin: 0.5rem auto;
   padding: 2rem;
   background-image: url(../img/accTop.webp), url(../img/accBottom.webp);
   background-repeat: no-repeat, no-repeat;
@@ -358,29 +358,28 @@ AWAL EVENT
 .event {
   text-align: center;
   padding: 2rem;
+  margin: 0.5rem auto;
   background-image: url(../img/accTop.webp), url(../img/accBottom.webp);
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
   background-size: contain;
-  
 }
 .event h1 {
   font-family: 'Mr Dafoe', cursive;
   text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .event .mycard {
-  background: inherit;
-  background-image: url(../img/box.webp);
-  background-size: cover;
-  position: relative;
-  margin: 1rem auto;
-  border-radius: 1rem;
+  margin: 0.5rem auto;
+  padding: 1rem 3rem;
+  background-color: var(--color-muda);
+  border-radius: 1.5rem;
+  background-image: url(../img/accTopRight.png), url(../img/accTopLeft.png), url(../img/accBottomLeft.png), url(../img/accBottomRight.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top right, top left, bottom left, bottom right;
 }
 .event .walimatul {
   font-family: 'Mr Dafoe', cursive;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.5rem;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
   
 }
 /*-----------------------------------------------------
@@ -392,10 +391,15 @@ AWAL LOKASI ACARA
 .lokasi {
   text-align: center;
   padding: 2rem;
+  margin: 0.5rem auto;
   background-image: url(../img/accTop.png), url(../img/accBottom.png);
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
   background-size: contain;
+}
+.lokasi .maps iframe {
+  background-color: #1f2633;
+  border: 0.5rem solid var(--color-muda);
 }
 .lokasi h1 {
   font-family: 'Mr Dafoe', cursive;
@@ -410,10 +414,15 @@ AWAL UCAPAN
 .ucapan {
   text-align: center;
   padding: 2rem;
+  margin: 0.5rem auto;
   background-image: url(../img/accTop.png), url(../img/accBottom.png);
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
   background-size: contain;
+}
+.ucapan h1 {
+  font-family: 'Mr Dafoe', cursive;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 /*-----------------------------------------------------
 AKHIR UCAPAN

@@ -35,7 +35,7 @@
 }
 #modal-container .modal-background .mymodal {
   border: var(--color-muda) solid 0.10rem;
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(2rem);
   display: inline-block;
   border-radius: 2rem;
   position: relative;

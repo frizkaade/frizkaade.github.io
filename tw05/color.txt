@@ -1,0 +1,11 @@
+#36688d biru
+#f3cd05 kuning
+#f49f05 hijau
+#f18904 brown
+#bda589 redLight
+
+#fde5b2 muda
+
+#fdd684 tua
+
+#c83a27 redDark

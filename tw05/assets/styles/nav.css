@@ -1,17 +1,18 @@
 .tab-menu {
-  background-color: var(--color-theme);
+  background-color: var(--color-redDark);
+  color: var(--color-muda);
   margin-bottom: 0;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 0.5rem 1.5rem;
-  border-radius: 4rem;
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-primary-light);
+  border: var(--color-muda) solid 0.10rem;
+  border-radius: 2rem;
   z-index: 10;
 }
 
-.tab-menu__list {
+.tab-menu__list { 
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -22,7 +23,6 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  color: var(--color-primary);
   border-radius: 4rem;
   padding: 0.5rem 0rem;
   cursor: pointer;
@@ -38,10 +38,9 @@
 }
 
 .tab-menu__active {
-  color: var(--color-primary);
+  color: var(--color-redDark);
   padding: 0.5rem 1.5rem;
-  background-color: var(--color-secondary);
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-primary-light);
+  background-color: var(--color-muda);
 }
 
 .tab-menu__active .tab-menu__text {

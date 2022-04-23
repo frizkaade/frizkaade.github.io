@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
-
 /*------------------------------------------------------------------
     IMPORT CSS
 -------------------------------------------------------------------*/
@@ -28,16 +27,28 @@ AWAL CSS FOR ALL
 }
 
 :root {
-  --color-primary: #060606;
+  --color-black: #1f2633;
   --color-primary-light: #c4c4c4;
   --color-secondary: #e8e9ee;
-  --color-white: #eaeaea;
+  --color-white: #ffffff;
   --color-theme: #a37949;
+
+  --color-blue: #36688d;
+  --color-yellow: #f3cd05;
+  --color-green: #f49f05;
+  --color-brown: #f18904;
+  --color-redLight: #bda589;
+
+  --color-muda: #fde5b2;
+  --color-tua: #fdd684;
+  --color-redDark: #c83a27;
+
+  
 }
 
 body {
   position: relative;
-  color: var(--color-primary);
+  color: var(--color-redDark);
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -185,12 +196,11 @@ AKHIR CSS FOR ALL
 }
 
 .message {
-  padding: 0.5rem 1rem;
-  background-color: var(--color-theme);
-  cursor: pointer;
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-primary-light);
-  color: var(--color-secondary);
-
+  color: var(--color-muda);
+  background: var(--color-redDark);
+  border: var(--color-muda) solid 0.10rem;
+  border-radius: 2rem;
+  padding: 0.6rem;
 }
 
 .message:active {
@@ -207,6 +217,9 @@ AWAL CSS ALL
   min-height: 100%;
   max-width: none;
   padding: 0 1.5rem;
+  border: var(--color-white) solid 0.10rem;
+  backdrop-filter: blur(1rem);
+  border-radius: 0 6rem;
 }
 .acc {
   text-align: center;
@@ -228,13 +241,35 @@ AWAL WEDDING
   width: 100%;
   min-height: 100%;
   max-width: none;
-  padding-top: 2rem;
+  padding-top: 3.8rem;
+  background-image: url(../img/accTop.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }
-.wedding .couple-name {
-  font-family: 'Great Vibes', cursive;
-  letter-spacing: 0.5rem;
-  padding: 0 0 1.5rem 0;
+.wedding .coupleName {
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: 0.40rem;
+  background:linear-gradient(90deg,var(--color-redDark), var(--color-redLight), var(--color-white),var(--color-muda));
+  transition-property:background;
+  background-size:400%;
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  font-size:26px;
+  transition:0.9s;
   font-weight: 600;
+}
+
+.coupleName{animation:animate 8s infinite;}
+
+@keyframes animate{
+  0%{
+      background-position:0%;
+  }
+  100%{
+      background-position:400%;
+  }
 }
 /*-----------------------------------------------------
 AKHIR WEDDING
@@ -242,39 +277,53 @@ AKHIR WEDDING
 /*-----------------------------------------------------
 AWAL COUNTDOWN TIMER
 -------------------------------------------------------*/
+#bgCount {
+  margin: 0.5rem auto;
+  padding: 1rem 3rem;
+  background-image: url(../img/accTopRight.png), url(../img/accTopLeft.png), url(../img/accBottomLeft.png), url(../img/accBottomRight.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top right, top left, bottom left, bottom right;
+}
 .count {
-  box-shadow: inset 0.2rem 0.2rem 0.2rem 0rem var(--color-theme);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  border-radius: 6rem 0;
+  border-radius: 2rem;
   text-align: center;
   padding: 1rem 2rem 0.1rem 2rem;
+  background-color: var(--color-muda);
 }
 .count-header {
   font-family: 'Mr Dafoe', cursive;
+  font-size: 30px;
+  font-weight: 550;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .countdown {
   margin: 0;
   padding: 1rem 0;
 }
 .countdown .cd {
-  width: 4rem;
+  width: 3.5rem;
   margin: 0.2rem auto;
   padding: 0.5rem;
-  border: 5px solid var(--color-theme);
+  border: 0.1rem solid var(--color-brown);
   border-radius: 1rem;
+  background-color: var(--color-tua);
 }
 .countdown h1 {
  padding-bottom: 0;
  margin-bottom: 0;
+ background: -webkit-linear-gradient(var(--color-brown), var(--color-redDark));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .countdown p {
   padding-top: 0;
   margin-top: 0;
-  font-size: 10px;
+  font-size: 11px;
 }
 .count-body {
   font-family: 'Great Vibes', cursive;
+  text-shadow: 2px 2px 2px var(--color-bgBlueDark);
 }
 /*-----------------------------------------------------
 AKHIR COUNTDOWN TIMER
@@ -284,24 +333,21 @@ AWAL COUPLE
 -------------------------------------------------------*/
 .couple {
   text-align: center;
-  width: 100%;
-  min-height: 100%;
-  max-width: none;
-  padding: 1rem 2rem 0.1rem 2rem;
-  /* shadow */
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  border-radius: 0 6rem;
+  padding: 2rem;
+  background-image: url(../img/accTop.webp), url(../img/accBottom.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: contain;
+}
+.couple .weare {
+  font-family: 'Mr Dafoe', cursive;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .couple h2 {
   font-family: 'Great Vibes', cursive;
   letter-spacing: 4px;
   padding: 1.5rem 2rem;
   font-weight: 600;
-}
-.couple .weare {
-  font-family: 'Mr Dafoe', cursive;
 }
 /*-----------------------------------------------------
 AKHIR COUPLE
@@ -311,15 +357,16 @@ AWAL EVENT
 -------------------------------------------------------*/
 .event {
   text-align: center;
-  padding: 1rem 2rem 0.1rem 2rem;
-  /* shadow */
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  border-radius: 6rem 0;
+  padding: 2rem;
+  background-image: url(../img/accTop.webp), url(../img/accBottom.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: contain;
+  
 }
 .event h1 {
   font-family: 'Mr Dafoe', cursive;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .event .mycard {
   background: inherit;
@@ -344,33 +391,40 @@ AWAL LOKASI ACARA
 -------------------------------------------------------*/
 .lokasi {
   text-align: center;
-  padding: 1rem 2rem 0.1rem 2rem;
-  /* shadow */
-  box-shadow: inset 0rem 0.2rem 0.2rem 0rem var(--color-theme);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(0.5rem);
-  border-radius: 0 6rem;
+  padding: 2rem;
+  background-image: url(../img/accTop.png), url(../img/accBottom.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: contain;
 }
 .lokasi h1 {
   font-family: 'Mr Dafoe', cursive;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 /*-----------------------------------------------------
 AKHIR LOKASI ACARA
 -------------------------------------------------------*/
 /*-----------------------------------------------------
-AWAL GALERY
+AWAL UCAPAN
 -------------------------------------------------------*/
-/* AWAL STORY */
-
+.ucapan {
+  text-align: center;
+  padding: 2rem;
+  background-image: url(../img/accTop.png), url(../img/accBottom.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: contain;
+}
 /*-----------------------------------------------------
-AKHIR STORY
+AKHIR UCAPAN
 -------------------------------------------------------*/
 
 /*-----------------------------------------------------
 AWAL FOOTER
 -------------------------------------------------------*/
 footer {
-  align-items: center;
+  display: flex;
+
 }
 footer p {
   font-size: 10px;

@@ -272,10 +272,14 @@ AWAL COUNTDOWN TIMER
 -------------------------------------------------------*/
 #bgCount {
   margin: 0 auto;
-  padding: 1rem 3rem;
-  background-image: url(../img/accTopRight.webp), url(../img/accTopLeft.webp), url(../img/accBottomLeft.webp), url(../img/accBottomRight.webp);
+  padding: 3.2rem 0.50rem;
+  background-image: url(../img/accTop.webp), url(../img/accBottom.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: contain;
+  /* background-image: url(../img/accTopRight.webp), url(../img/accTopLeft.webp), url(../img/accBottomLeft.webp), url(../img/accBottomRight.webp);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top right, top left, bottom left, bottom right;
+  background-position: top right, top left, bottom left, bottom right; */
 }
 .count {
   border-radius: 0rem;
@@ -376,11 +380,11 @@ AWAL EVENT
   background-position: top center, bottom center;
   background-size: contain, contain;
 }
-/* .event h1 {
+.event h1 {
   font-family: 'Mr Dafoe', cursive;
   text-shadow: 0.09rem 0.09rem 0.09rem var(--color-muda);
   padding: 1.8rem auto;
-} */
+}
 .event .mycard {
   padding: 4rem 1rem;
   background-color: var(--color-muda);
@@ -410,8 +414,7 @@ AWAL LOKASI ACARA
   background-size: contain;
 }
 .lokasi .maps iframe {
-  background-color: #1f2633;
-  border: 0.5rem solid var(--color-muda);
+  border: 0.20rem solid var(--color-muda);
 }
 .lokasi h1 {
   font-family: 'Mr Dafoe', cursive;

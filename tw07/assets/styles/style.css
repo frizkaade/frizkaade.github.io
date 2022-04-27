@@ -41,14 +41,15 @@ AWAL CSS FOR ALL
 
   --color-muda: #fde5b2;
   --color-tua: #fdd684;
-  --color-redDark: #c83a27;
+  --color-redDark: #a37949;
+  /* --color-redDark: #c83a27; */
 
   
 }
 
 body {
   position: relative;
-  color: var(--color-redDark);
+  color: var(--color-black);
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -217,7 +218,7 @@ AWAL CSS ALL
   min-height: 100%;
   padding: 0 0.5rem;
   border: var(--color-muda) solid 0.10rem;
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(0.05rem);
 }
 /*-----------------------------------------------------
 AKHIR CSS ALL
@@ -279,7 +280,7 @@ AWAL COUNTDOWN TIMER
 .count {
   border-radius: 0rem;
   text-align: center;
-  background-color: var(--color-muda);
+  /* background-color: var(--color-muda); */
 }
 .count-header {
   padding: 1rem auto;
@@ -298,12 +299,12 @@ AWAL COUNTDOWN TIMER
   padding: 0.5rem;
   border: 0.1rem solid var(--color-tua);
   border-radius: 1rem;
-  background-color: var(--color-tua);
+  /* background-color: var(--color-tua); */
 }
 .countdown h1 {
  padding: 0;
  margin: 0;
- background: -webkit-linear-gradient(var(--color-muda), var(--color-redDark));
+ background: -webkit-linear-gradient(var(--color-black), var(--color-redDark));
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 }
@@ -311,12 +312,12 @@ AWAL COUNTDOWN TIMER
   padding-top: 0;
   margin-top: 0;
   font-size: 11px;
-  color: var(--color-redDark);
+  color: var(--color-black);
 }
 .count-body {
   font-family: 'Great Vibes', cursive;
   font-size: 18px;
-  color: var(--color-redDark);
+  color: var(--color-black);
   /* text-shadow: 2px 2px 2px var(--color-yellow); */
 }
 /*-----------------------------------------------------
@@ -375,24 +376,24 @@ AWAL EVENT
   background-position: top center, bottom center;
   background-size: contain, contain;
 }
-.event h1 {
+/* .event h1 {
   font-family: 'Mr Dafoe', cursive;
   text-shadow: 0.09rem 0.09rem 0.09rem var(--color-muda);
-  padding-bottom: 1.8rem;
-}
+  padding: 1.8rem auto;
+} */
 .event .mycard {
   padding: 4rem 1rem;
   background-color: var(--color-muda);
-  border: 0.5rem solid var(--color-tua);
+  border: 0.1rem solid var(--color-tua);
   border-radius: 1.5rem;
   background-image: url(../img/accTopRight.webp), url(../img/accTopLeft.webp), url(../img/accBottomLeft.webp), url(../img/accBottomRight.webp);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top right, top left, bottom left, bottom right;
 }
-.event .walimatul {
+.event .mycard .walimatul {
   font-family: 'Mr Dafoe', cursive;
   text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
-  
+  padding: 1rem auto;
 }
 /*-----------------------------------------------------
 AKHIR EVENT
@@ -430,6 +431,15 @@ AWAL UCAPAN
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
   background-size: contain;
+}
+.ucapan #ucapanCn {
+  font-family: 'Great Vibes', cursive;
+  background: url(../img/frame-6543169.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11em;
+  padding: 3.5em;
+  letter-spacing: 0.5rem;
 }
 .ucapan h1 {
   font-family: 'Mr Dafoe', cursive;

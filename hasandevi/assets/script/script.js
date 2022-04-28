@@ -69,7 +69,7 @@ if (distance < 0) {
 
 // AWAL BACKGROUND MUSIK
 var musik=new Audio();
-musik.src="assets/media/WeddingStoryMusic.mp3";
+musik.src="assets/media/BlueSky.mp3";
 musik.loop=true;
 musik.pause();
 
@@ -89,7 +89,7 @@ function startAudio(){
 window.addEventListener('load', startAudio);
 // ---------------------
 var musik=new Audio();
-musik.src="assets/media/WeddingStoryMusic.mp3";
+musik.src="assets/media/BlueSky.mp3";
 musik.loop=true;
 musik.pause();
 

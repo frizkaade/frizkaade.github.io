@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Wedding Of Devi & Hasan</title>
+    <meta name="keywords" content="Undangan Digital">
+    <meta name="description" content="Rabu, 04 Mei 2022">
+    <meta name="author" content="Undangan Digital">
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <!-- Mine CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="modal-active">
+
+    <!-- AWAL MODAL COVER -->
+    <div id="modal-container" class="modalCover">
+        <div class="modal-background d-flex flex-column justify-content-center align-items-center">
+            <div class="mymodal">
+                <h1 data-aos="zoom-in">Undangan</h1>
+                <p data-aos="zoom-in">Special Invitation</p>
+                <img class="img-fluid mt-1" src="assets/img/img-cover.webp" alt="" width="300" data-aos="zoom-in">
+                <h2 class="cn mb-3">Hasan & Devi</h2>
+                <p class="p-0 m-0">Kepada Yth.</p>
+                <h3 class="namaTamu" data-aos="zoom-in">
+                    <script type='text/JavaScript'>
+                        //ambil URL
+                        var url = window.location.toString();
+                        //ambil bagian parameternya
+                        url.match(/\?to=(.+)$/);
+                        var params = RegExp.$1;
+                        // pisahkan parameter URL ke associative array
+                        var params = params.split("+");
+                        var queryStringList = {};
+                        for(var i=0;i<params.length;i++)
+                        {   var tmp = params[i].split("=");
+                            queryStringList[tmp[0]] = unescape(tmp[1]);
+                        }
+                        // tampilkan isi associative array
+                        for(var i in queryStringList)
+                        {   var res = queryStringList[i].replace(/[+]/g, " ");
+                            document.write(i+" ");
+                        }
+                    </script>
+                </h3>
+                <p>Kami mengundang Bapak/Ibu/Saudara/i,<br>Untuk menghadiri pernikahan kami</p>
+                <h3><a href="#wedding">
+                        <p class="button" id="coverPlay">
+                            <span class="tab-menu__icon"><i class="ri-mail-unread-fill"></i></span>
+                            Buka Undangan
+                        </p>
+                    </a>
+                </h3>
+                <div class="modalFooter">
+                    <p>Website Invitation <i class="ri-mail-send-fill"></i> Created by :
+                        <a href="https://www.jetundangan.com/"><strong>JetUndangan.com</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AWAL MODAL COVER -->
+
+    <!-- Background -->
+    <div id="music">
+        <button id="play"></button>
+    </div>
+    <!-- Akhir Background Musik -->
+
+    <div class="tab-menu">
+        <ul class="tab-menu__list">
+            <a href="#wedding">
+                <li class="tab-menu__item tab-menu__active">
+                    <span class="tab-menu__icon"><i class="ri-home-heart-line"></i></span>
+                    <span class="tab-menu__text">Home</span>
+                </li>
+            </a>
+            <a href="#couple">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-hearts-line"></i></span>
+                    <span class="tab-menu__text">Mempelai</span>
+                </li>
+            </a>
+            <a href="#event">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-calendar-check-line"></i></span>
+                    <span class="tab-menu__text">Acara</span>
+                </li>
+            </a>
+            <a href="#lokasi">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-map-pin-line"></i></span>
+                    <span class="tab-menu__text">Lokasi</span>
+                </li>
+            </a>
+            <a href="#ucapan">
+                <li class="tab-menu__item">
+                    <span class="tab-menu__icon"><i class="ri-chat-heart-line"></i></span>
+                    <span class="tab-menu__text">Ucapan</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+    <!-- AWAL WEDDING -->
+    <div class="wedding" id="wedding">
+        <img data-aos="zoom-in" src="assets/img/walimatul.png" alt="Basmallah" width="210px" class="img-fluid pb-2"><br>
+        <img class="img-fluid" src="assets/img/img-cover.webp" alt="" width="300" data-aos="zoom-in">
+        <h2 class="coupleName">Hasan & Devi</h2>
+        <div data-aos="fade-down">
+            <h4>RABU</h4>
+            <h4>Mei <span class="dt" style="font-size: 36px;"><strong>04</strong></span> 2022</h4>
+            <a target="_blank"
+                href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NjNrb2VscXBlZXZtbTVlYTczM2kwOWRuaGQgZWtvbmRhbmdhbkBt&amp;tmsrc=ekondangan%40gmail.com">
+                <p class="button message"><i class="ri-calendar-2-line"></i> Simpan Tanggal</p>
+            </a>
+        </div>
+        <div class="acc">
+            <img src="assets/img/accBottom.webp" alt="acc" class="img-fluid p-0 m-0" width="100%">
+        </div>
+    </div>
+    <!-- AKHIR WEDDING -->
+    <!-- AWAL COUNTDOWN TIMER -->
+    <div class="box count" id="bgCount">
+        <h1 data-aos="zoom-in" class="count-header">Menuju</h1>
+        <h1 data-aos="zoom-in" class="count-header">Hari Bahagia</h1>
+        <div id="countdown" class="countdown d-flex justify-content-center" data-aos="zoom-in"></div>
+        <div class="acc">
+            <img src="assets/img/acc.webp" alt="acc" class="img-fluid p-0 m-0" width="100%">
+        </div>
+        <p class="count-body" data-aos="slide-up">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+            untukmu istri-istri
+            dari jenismu
+            sendiri,
+            supaya kamu cenderung dan merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan
+            sayang.
+            Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”<br><br>
+            ~ QS. Ar-Rum : 21 ~
+        </p>
+    </div>
+    <!-- AKHIR COUNTDOWN TIMER -->
+
+    <!-- AWAL COUPLE -->
+    <div class="box couple" id="couple">
+        <h1 data-aos="zoom-in" class="weare">We Are<br>Getting Married !</h1>
+        <img data-aos="zoom-in" src="assets/img/basmallah.webp" alt="Basmallah" width="210px" class="img-fluid pb-3">
+        <p data-aos="zoom-in">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.</p>
+        <p data-aos="zoom-in"> Ya Allah, perkenankan kami :</p>
+        <div class="acc">
+            <img src="assets/img/horLineTop.webp" alt="acc" class="img-fluid p-0 m-0">
+        </div>
+        <img src="assets/img/couple/girl.webp" data-aos="flip-right" alt=" Mempelai Wanita" width="100px">
+        <h2 class="nameOfMemp" data-aos="flip-right">
+            <span> Mei Lufiana Devi </span>
+        </h2>
+        <p data-aos="zoom-in">
+            Putri ke-2 dari Bpk Tofikkurokhman &<br> Ibu Sri Handari
+        </p>
+        <div class="acc">
+            <img src="assets/img/acc.webp" alt="acc" class="img-fluid p-0 m-0">
+        </div>
+        <img src="assets/img/couple/man.webp" data-aos="flip-right" alt="Mempelai Pria" width="100px">
+        <h2 class="nameOfMemp" data-aos="flip-right">
+            <span>Hasanudin</span>
+        </h2>
+        <p class="NameOfMemp" data-aos="zoom-in">
+            Putra ke-3 Dari Bpk Slamet &<br> Ibu Wachyuningsih (Almh)
+        </p>
+        <div class="acc">
+            <img src="assets/img/horLineBottom.webp" alt="acc" class="img-fluid p-0 m-0">
+        </div>
+        <p data-aos="zoom-in">Untuk Mengikuti sunah rasul-MU
+            dalam rangka membentuk keluarga yang
+            sakinah, mawaddah, warahmah.
+        </p>
+    </div>
+    <!-- AKHIR COUPLE -->
+
+    <!-- AWAL EVENT -->
+    <div class="box event" id="event">
+        <h1 data-aos="zoom-in">Save The Date</h1>
+        <img data-aos="zoom-in" src="assets/img/assalamualaikum.png" alt="salam" width="210px" class="img-fluid pb-3">
+        <p data-aos="zoom-in">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala,</p>
+        <p data-aos="zoom-in">Kami mengundang Bapak/Ibu/Saudara/i,</p>
+        <p data-aos="zoom-in">untuk menghadiri tasyakuran walimatul ursy Kami yang akan di selenggarakan pada : </p>
+        <hr>
+        <div class="box mycard" data-aos="zoom-in">
+            <div class="walimatul" data-aos="flip-right">
+                <h1>Walimatul Ursy</h1>
+                <hr class="p-0 m-0">
+            </div>
+            <div class="eventBody">
+                <h3 class="eventText">Selasa, Rabu, Kamis</h3>
+                <h2 class=" eventText">03 04 05</h2>
+                <h4 class="eventText">Mei 2022</h4>
+                <p class="eventText">Kalapacung Rt 002 / Rw 001, Kec Bobotsari</p>
+                <p class="eventText">Purbalingga, Jawa Tengah. 53353</p>
+            </div>
+            <a href="#lokasi">
+                <p class="button message"><i class="ri-map-pin-line"></i> Lihat Peta</p>
+            </a>
+            <div class="acc">
+                <img src="assets/img/acc.webp" alt="acc" class="img-fluid p-0 m-0">
+            </div>
+            <div class="walimatul" data-aos="flip-right">
+                <h1>Akad Nikah</h1>
+                <hr class="p-0 m-0">
+            </div>
+            <div class="eventBody">
+                <h3 class="eventText">RABU</h3>
+                <h2 class="eventText" style="font-size: 42px;">04</h2>
+                <h4 class="eventText">Mei 2022</h4>
+                <p class="eventText"><i class="ri-time-line"></i> 10:00 WIB s/d Selesai</p>
+                <p class="eventText">Kalapacung Rt 002 / Rw 001, Kec Bobotsari</p>
+                <p class="eventText">Purbalingga, Jawa Tengah 53353</p>
+            </div>
+            <a href="#lokasi">
+                <p class="button message"><i class="ri-map-pin-line"></i> Lihat Peta</p>
+            </a>
+        </div>
+        <hr>
+        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan
+            hadir untuk memberikan doa restu kepada kedua mempelai.</p>
+        <p>Atas kehadiran serta doa restu, kami ucapkan terima kasih.</p>
+        <p>Wassalamualaikum Warahmatullahi Wabarakatuh</p>
+    </div>
+    <!-- AKHIR EVENT -->
+
+    <!-- AWAL DENAH LOKASI -->
+    <div id="lokasi" class="box lokasi">
+        <h1>Lokasi Acara</h1>
+        <p class="card-text">Bertempat di rumah mempelai wanita</p>
+        <p class="card-text">Ds Kalapacung Rt 002 / Rw 001, Kec Bobotsari</p>
+        <p class="card-text">Purbalingga, Jawa Tengah 53353</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="" data-aos="zoom-in">
+                        <!-- Elemen yang akan menjadi kontainer peta -->
+                        <div class="maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.6759774602642!2d109.37696826708266!3d-7.307997178515243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ff7ca73a33ca1%3A0x154382dd293d46fb!2sAksa%20snack%20%2F%20Roso%20snack!5e0!3m2!1sen!2sid!4v1649607195542!5m2!1sen!2sid"
+                                width="100%" height="275px" style="border-radius: .5rem;" loading="lazy"
+                                title="google maps"></iframe>
+                        </div>
+                        <br>
+                        <a href="https://goo.gl/maps/qTSgwLJtWXfE72Xo9" target="_blank">
+                            <p class="button message"><i class="ri-map-pin-line"></i> Buka Maps</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR DENAH LOKASI -->
+
+    <!-- AWAL UCAPAN -->
+    <div class="box ucapan" id="ucapan">
+        <div class="mycard text-center p-3" data-aos="zoom-in">
+            <div class="mycard text-center p-3" data-aos="zoom-in">
+                <div class="ucapanHeader pb-sm-0">
+                    <h1>Konfirmasi Kehadiran</h1>
+                </div>
+                <div class="UcapanBody">
+                    <p>Tekan tombol dibawah ini dan pastikan kehadiranmu untuk</p><br>
+                    <div id="ucapanCn" data-aos="flip-up">
+                        <h2>Hasan</h2>
+                        <h1> & </h1>
+                        <h2>Devi</h2>
+                    </div>
+                    <a href="https://wa.me/6289670916171?text=Halo Devi dan Hasan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan '0605783585 pada Hari Rabu, 04 Mei 2022"
+                        target="_blank">
+                        <p class="button message"> Konfirmasi
+                            Kehadiran<br> untuk mempelai laki-laki</p>
+                    </a>
+                    <a href="https://wa.me/6285729381212?text=Halo Devi dan Hasan,saya ingin menginformasikan kehadiran di acara resepsi pernikahan '0605783585 pada Hari Rabu, 04 Mei 2022"
+                        target="_blank">
+                        <p class="button message"> Konfirmasi
+                            Kehadiran<br> untuk mempelai wanita</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="acc">
+            <img src="assets/img/accBottom.webp" alt="acc" class="img-fluid p-0 m-0" width="100%">
+        </div>
+        <div class="acc">
+            <img src="assets/img/accTop.webp" alt="acc" class="img-fluid p-0 m-0" width="100%">
+        </div>
+        <div class="giftHeader pb-sm-0">
+
+            <h1>Love Gift</h1>
+        </div>
+        <p>Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan tanda kasih untuk
+            kami, dapat melalui :</p>
+        <img src="assets/img/bni.webp" alt="Cuci tangan menggunakan Handsanitizer" width="75px" height="auto">
+        <p class="pb-1">No. Rekening: <strong id="norek">0605783585</strong></p>
+        <p>a.n Mei Lufiana Devi</p>
+        <h4 id="tombol" onclick="copyToClipboard('#norek')">
+            <p id="copy" class="button message">Copy nomor rekening</p>
+        </h4>
+        <div class="ucapanFooter">
+            <h3>Terima Kasih</h3>
+        </div>
+    </div>
+    <!-- AKHIR UCAPAN -->
+    <!-- Awal Prokes -->
+    <div class="mycard bg-transparent text-center p-3" data-aos="zoom-in">
+        <h3>Protokol Kesehatan</h3>
+        <p>Sehubungan dengan situasi pandemi COVID-19 saat ini,</p>
+        <p>tanpa mengurangi rasa hormat kami kepada Bapak/Ibu/Saudara/i,</p>
+        <p>acara pernikahan kami akan dilaksanakan dengan menerapkan standar protokol kesehatan.</p>
+        <hr>
+        <img src="../tw01/assets/font/prokes/mask.png" alt="Gunakan Masker Atau Faceshield" width="75px" height="auto">
+        <p>Gunakan Masker Atau Faceshield</p>
+        <img src="../tw01/assets/font/prokes/wash.png" alt="Cuci tangan menggunakan Handsanitizer" width="75px"
+            height="auto">
+        <p>Cuci tangan menggunakan Handsanitizer</p>
+        <hr>
+        <p>Terima kasih atas pengertian Bapak/Ibu/Saudara/i, semoga dengan melakukan
+            protokol
+            kesehatan di atas, kita semua dapat terhindar dari Covid-19.</p>
+    </div>
+    <!-- Akhir Prokes -->
+    <!-- AWAL FOOTER -->
+    <div class="footer">
+        <footer>
+            <p>Website Invitation <i class="ri-mail-send-fill"></i> Created by :
+                <a href="https://www.jetundangan.com/"><strong>jetundangan.com</strong></a>
+            </p>
+        </footer>
+    </div>
+    <!-- AKHIR FOOTER -->
+    <script src="assets/script/jquery-3.5.1.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/cover.js"></script>
+    <script src="assets/script/nav.js"></script>
+    <script src="assets/script/aos.js"></script>
+    <script src="assets/script/bootstrap.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        })
+    </script>
+</body>
+
+</html>

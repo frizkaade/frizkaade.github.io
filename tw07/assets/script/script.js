@@ -73,6 +73,26 @@ musik.src="assets/media/WeddingStoryMusic.mp3";
 musik.loop=true;
 musik.pause();
 
+function startAudio(){
+  var play=document.getElementById("coverPlay");
+
+  play.addEventListener('click', fplay);
+
+  function fplay(){
+    if(musik.paused){
+      musik.play();
+    }else{
+      musik.pause();
+    }
+  }
+};
+window.addEventListener('load', startAudio);
+// ---------------------
+var musik=new Audio();
+musik.src="assets/media/WeddingStoryMusic.mp3";
+musik.loop=true;
+musik.pause();
+
 function mulaiAudio(){
   var play=document.getElementById("play");
 

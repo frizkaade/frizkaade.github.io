@@ -27,7 +27,7 @@ AWAL CSS FOR ALL
 }
 
 :root {
-  --color-black: #1f2633;
+  --color-black: #191611;
   --color-primary-light: #c4c4c4;
   --color-secondary: #e8e9ee;
   --color-white: #ffffff;
@@ -42,7 +42,7 @@ AWAL CSS FOR ALL
   --color-muda: #fde5b2;
   --color-tua: #fdd684;
   --color-redDark: #a37949;
-  /* --color-redDark: #c83a27; */
+  /* --color-redDark: #c83a27; warna asli redDark*/
 
   
 }
@@ -277,14 +277,10 @@ AWAL COUNTDOWN TIMER
   background-repeat: no-repeat, no-repeat;
   background-position: top center, bottom center;
   background-size: contain;
-  /* background-image: url(../img/accTopRight.webp), url(../img/accTopLeft.webp), url(../img/accBottomLeft.webp), url(../img/accBottomRight.webp);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top right, top left, bottom left, bottom right; */
 }
 .count {
   border-radius: 0rem;
   text-align: center;
-  /* background-color: var(--color-muda); */
 }
 .count-header {
   padding: 1rem auto;
@@ -303,7 +299,6 @@ AWAL COUNTDOWN TIMER
   padding: 0.5rem;
   border: 0.1rem solid var(--color-tua);
   border-radius: 1rem;
-  /* background-color: var(--color-tua); */
 }
 .countdown h1 {
  padding: 0;
@@ -386,18 +381,31 @@ AWAL EVENT
   padding: 1.8rem auto;
 }
 .event .mycard {
-  padding: 4rem 1rem;
-  background-color: var(--color-muda);
-  border: 0.1rem solid var(--color-tua);
+  padding: 0rem 1rem;
+  box-shadow: inset 1px 1px 15px var(--color-tua);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  /* background-color: #b2fde5; */
+  border: 0.1rem solid var(--color-muda);
   border-radius: 1.5rem;
   background-image: url(../img/accTopRight.webp), url(../img/accTopLeft.webp), url(../img/accBottomLeft.webp), url(../img/accBottomRight.webp);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top right, top left, bottom left, bottom right;
 }
-.event .mycard .walimatul {
+.mycard .walimatul {
   font-family: 'Mr Dafoe', cursive;
-  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
-  padding: 1rem auto;
+  text-shadow: 0.09rem 0.09rem 0.09rem var(--color-redDark);
+  padding: 2rem;
+}
+.eventBody h2 {
+  background: -webkit-linear-gradient(var(--color-black), var(--color-redDark));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.eventBody h3, h4 {
+  background: -webkit-linear-gradient(var(--color-black), var(--color-redDark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*-----------------------------------------------------
 AKHIR EVENT
@@ -436,7 +444,7 @@ AWAL UCAPAN
   background-size: contain;
 }
 .ucapan #ucapanCn {
-  font-family: 'Great Vibes', cursive;
+  font: 'Great Vibes', cursive;
   background: url(../img/frame-6543169.png);
   background-position: center;
   background-repeat: no-repeat;

@@ -34,18 +34,19 @@
   background-size: cover;
 }
 #modal-container .modal-background .mymodal {
+  padding: 1rem;
   border: var(--color-muda) solid 0.10rem;
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(0.5rem);
   display: inline-block;
   border-radius: 2rem;
   position: relative;
-  height: 90%;
+  height: auto;
   width: 90%;
+  overflow: hidden;
 }
 .mymodal h1 {
   font-size: 42px;
   letter-spacing: 0.8rem;
-  padding-top: 1.2rem;
   text-shadow: 0.09rem 0.09rem 0.09rem var(--color-tua);
 }
 .modalCover .cn {
@@ -146,6 +147,9 @@
       opacity: 0;
     }
   }
-.mymodal .footer p {
+.modalFooter p {
+  position: relative;
+  width: 100%;
+  bottom: 0;
   font-size: 10px;
 }
